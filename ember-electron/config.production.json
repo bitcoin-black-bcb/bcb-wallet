@@ -2,7 +2,7 @@
   "version": "2",
   "rpc_enable": "true",
   "rpc": {
-    "address": "::1",
+    "address": "127.0.0.1",
     "port": "15000",
     "enable_control": "true",
     "frontier_request_limit": "16384",
