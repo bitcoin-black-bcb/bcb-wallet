@@ -9,7 +9,7 @@ const { startDaemon } = require('./daemon');
 const { ipcMain } = electron;
 
 const downloadStart = ({ sender }, url) => {
-  console.log({ sender }, url, '{ sender }, url downloadStart ');
+  log.info({ sender }, url, '{ sender }, url downloadStart ');
 
   const window = sender.getOwnerBrowserWindow();
   const onProgress = debounceFn(
