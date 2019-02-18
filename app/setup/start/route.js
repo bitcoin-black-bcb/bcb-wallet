@@ -13,7 +13,7 @@ export default class SetupStartRoute extends Route {
       const isDataDownloaded = get(electron, 'isDataDownloaded');
       if (!isDataDownloaded) {
         return this.transitionTo('setup.download', {
-          queryParams: { asset: 'data' }
+          queryParams: { asset: 'data' },
         });
       }
     }
