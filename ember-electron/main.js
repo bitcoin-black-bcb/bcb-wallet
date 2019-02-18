@@ -137,7 +137,7 @@ ipcMain.on('node-start', nodeStart);
 const protocolServeName = protocolServe({
   app,
   protocol,
-  cwd: path.join(__dirname || path.resolve(path.dirname('')), '..', 'ember')
+  cwd: path.join(__dirname || path.resolve(path.dirname('')), '..', 'ember'),
 });
 
 protocol.registerStandardSchemes([protocolServeName], { secure: true });
@@ -237,7 +237,7 @@ const run = async () => {
 
   Object.defineProperty(global, 'isDataDownloaded', {
     get() {
-      console.log(pathExists, 'pathExists');
+      log.info(pathExists, 'pathExists');
 
       return pathExists.sync(databasePath);
     }
@@ -252,14 +252,14 @@ const run = async () => {
   mainWindow.on('unresponsive', () => {
     log.warn(
       'Application window has become unresponsive:',
-      mainWindow.getTitle()
+      mainWindow.getTitle(),
     );
   });
 
   mainWindow.on('responsive', () => {
     log.info(
       'Application window has become responsive again:',
-      mainWindow.getTitle()
+      mainWindow.getTitle(),
     );
   });
 
@@ -267,7 +267,7 @@ const run = async () => {
     const elapsed = Date.now() - appLaunchTimestamp;
     log.info(
       `Application window ready to show (took ${prettyMs(elapsed)}):`,
-      mainWindow.getTitle()
+      mainWindow.getTitle(),
     );
     mainWindow.show();
   });

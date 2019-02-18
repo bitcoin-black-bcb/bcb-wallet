@@ -2,18 +2,18 @@
   "version": "2",
   "rpc_enable": "true",
   "rpc": {
-    "address": "127.0.0.1",
-    "port": "17076",
+    "address": "::1",
+    "port": "15000",
     "enable_control": "true",
     "frontier_request_limit": "16384",
     "chain_request_limit": "16384",
     "max_json_depth": "20"
   },
   "node": {
-    "version": "15",
-    "peering_port": "17075",
+    "version": "16",
+    "peering_port": "14000",
     "bootstrap_fraction_numerator": "1",
-    "receive_minimum": "1",
+    "receive_minimum": "1000000000000000000000000",
     "logging": {
       "version": "5",
       "ledger": "false",
@@ -32,30 +32,36 @@
       "work_generation_time": "true",
       "upnp_details": "false",
       "timing": "false",
-      "log_to_cerr": "false",
+      "log_to_cerr": "true",
       "max_size": "16777216",
       "rotation_size": "4194304",
       "flush": "true"
     },
     "work_peers": "",
-    "preconfigured_peers": "",
+    "preconfigured_peers": [
+      "2406:da1a:305:2d01:debd:39b9:d75d:2abd",
+      "2406:da1c:890:da01:da59:3b9e:ebb1:2489",
+      "2600:1f16:aaa:ff02:74dc:ff20:bb59:2daa",
+      "2a05:d01c:e0a:2801:8b79:f9db:ee8f:e673"
+    ],
     "preconfigured_representatives": [
-      "xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpiij4txtdo"
+      "bcb_3iarrwbi5fe7zp6adjgqx4fpopotbzxyo3659gebigxw79iny4qx8qz1i7zq"
     ],
     "online_weight_minimum": "60000000000000000000000000000000000000",
-    "online_weight_quorum": "50",
+    "online_weight_quorum": "5",
     "password_fanout": "1024",
     "io_threads": "4",
     "network_threads": "4",
     "work_threads": "4",
     "enable_voting": "true",
     "bootstrap_connections": "4",
-    "bootstrap_connections_max": "16",
+    "bootstrap_connections_max": "64",
     "callback_address": "",
     "callback_port": "0",
     "callback_target": "",
     "lmdb_max_dbs": "128",
-    "block_processor_batch_max_time": "5000"
+    "block_processor_batch_max_time": "5000",
+    "allow_local_peers": "false"
   },
   "opencl_enable": "false",
   "opencl": {
