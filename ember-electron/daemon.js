@@ -68,9 +68,10 @@ const getLoopbackAddress = () =>
 
       const { address } = this.address();
       return server.close(() => {
-        // const loopback = net.isIPv6(address) ? '::1' : '127.0.0.1';
-        const loopback = '127.0.0.1';
-        console.log(loopback, 'loopback');
+        const loopback = net.isIPv6(address) ? '::1' : '127.0.0.1';
+        // const loopback = '[::1]';
+        // const loopback = '127.0.0.1';
+        log.info(loopback, 'loopback');
 
         return resolve(loopback);
       });
@@ -119,7 +120,7 @@ const forceKill = (child, timeout = 5000) => {
 
 const startDaemon = async () => {
   const dataPath = path.normalize(global.dataPath);
-  console.log(dataPath, 'dataPath');
+  log.info(dataPath, 'dataPath');
 
   const configPath = path.join(dataPath, 'config.json');
   const loopbackAddress = await getLoopbackAddress();
@@ -138,6 +139,7 @@ const startDaemon = async () => {
   const dhparamPath = path.join(tlsPath, 'dhparam.pem');
   if (!config.rpc.secure) {
     log.info('Generating secure node RPC configuration...');
+    log.info(config.rpc.address, 'config.rpc.address');
     const clientsPath = path.join(tlsPath, 'clients');
     await makeDir(clientsPath, { fs });
 
@@ -179,11 +181,13 @@ const startDaemon = async () => {
       server_key_path: serverKeyPath,
       server_key_passphrase: '',
       server_dh_path: dhparamPath,
-      client_certs_path: clientsPath
+      client_certs_path: clientsPath,
     };
   }
 
   const host = config.rpc.address;
+  log.info(host, 'host');
+
   const port = await getPort({ host, port: [config.rpc.port] });
   const peeringPort = await getPort({ host, port: [config.node.peering_port] });
   config.rpc.port = port;
@@ -206,7 +210,7 @@ const startDaemon = async () => {
     mode: 0o600,
     replacer(key, value) {
       return typeof value === 'object' ? value : String(value);
-    }
+    },
   });
 
   const cmd = path.join(
@@ -221,7 +225,6 @@ const startDaemon = async () => {
     windowsHide: true,
     stdio: ['ignore', 'pipe', 'pipe']
   });
-  console.log(child, 'child');
 
   const { pid } = child;
   if (!pid) {
@@ -254,7 +257,7 @@ const startDaemon = async () => {
   const killHandler = () => child.kill();
   const removeExitHandler = signalExit(killHandler);
   child.once('exit', () => {
-    console.log(' child exit');
+    log.info(' child exit');
 
     removeExitHandler();
     global.isNodeStarted = false;
@@ -289,6 +292,9 @@ const startDaemon = async () => {
     changeOrigin: true
   });
 
+  log.info(
+    `proxy started ( ${proxy})`,
+  );
   proxy.on('error', err => log.error('[proxy]', err));
 
   const pems = generateCert('rpc.nanowalletcompany.com');
@@ -310,7 +316,7 @@ const startDaemon = async () => {
     Object.assign({}, jwtOptions, {
       secret: proxyCert,
       algorithms: ['RS256']
-    })
+    }),
   );
 
   const connectApp = connect();
@@ -337,7 +343,7 @@ const startDaemon = async () => {
     dhparam,
     cert: proxyCert,
     key: proxyKey,
-    secureProtocol: 'TLSv1_2_server_method'
+    secureProtocol: 'TLSv1_2_server_method',
   };
 
   const server = spdy.createServer(serverOptions, connectApp);
@@ -349,7 +355,7 @@ const startDaemon = async () => {
     url,
     error,
     { data },
-    callback
+    callback,
   ) => {
     const isTrusted = data === proxyCert;
     if (isTrusted) {
@@ -391,7 +397,7 @@ const startDaemon = async () => {
     signOptions
   );
 
-  const proxyPort = 17077;
+  const proxyPort = 17076;
   return new Promise((resolve, reject) => {
     log.info(`Proxy server starting on ${loopbackAddress}:${proxyPort}`);
     server.listen(proxyPort, loopbackAddress, function Server(err) {
