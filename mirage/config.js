@@ -26,14 +26,23 @@ export default function () {
   // ember-intl
   this.passthrough('/translations/**');
 
+  // // Live network
+  // this.passthrough('http://localhost:7076');
+
+  // // Test network
+  // this.passthrough('http://localhost:55000');
+
+  // // Electron proxy
+  // this.passthrough('https://localhost:17076/**');
+
   // Live network
-  this.passthrough('http://localhost:7076');
+  this.passthrough('http://::1:15000');
 
   // Test network
-  this.passthrough('http://localhost:55000');
+  this.passthrough('http://::1:15000');
 
   // Electron proxy
-  this.passthrough('https://localhost:17076/**');
+  this.passthrough('https://::1:15000/**');
 
   this.passthrough('https://api.coinmarketcap.com/**');
 
