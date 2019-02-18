@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/CL/cl.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/CL/cl.h
 OpenCL/cl_platform.h
 -
 CL/cl_platform.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/CL/cl_platform.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/CL/cl_platform.h
 AvailabilityMacros.h
 -
 stdint.h
@@ -36,13 +36,13 @@ intrin.h
 immintrin.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/blake2/blake2.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/blake2/blake2.h
 stddef.h
 -
 stdint.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/blockbuilders.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/blockbuilders.hpp
 memory
 -
 btcb/lib/blocks.hpp
@@ -50,7 +50,7 @@ btcb/lib/blocks.hpp
 btcb/lib/errors.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/blocks.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/blocks.hpp
 btcb/lib/numbers.hpp
 -
 assert.h
@@ -64,13 +64,13 @@ streambuf
 unordered_map
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/config.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/config.hpp
 chrono
 -
 cstddef
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/errors.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/errors.hpp
 btcb/lib/expected.hpp
 -
 string
@@ -80,7 +80,7 @@ system_error
 type_traits
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/expected.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/expected.hpp
 exception
 -
 functional
@@ -90,15 +90,15 @@ type_traits
 utility
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/interface.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/interface.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/numbers.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/numbers.hpp
 boost/multiprecision/cpp_int.hpp
 -
 cryptopp/osrng.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/utility.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/utility.hpp
 boost/filesystem.hpp
 -
 boost/system/error_code.hpp
@@ -114,7 +114,7 @@ thread
 vector
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/lib/work.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/lib/work.hpp
 boost/optional.hpp
 -
 boost/thread/thread.hpp
@@ -134,7 +134,7 @@ memory
 thread
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/bootstrap.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/bootstrap.cpp
 btcb/node/bootstrap.hpp
 -
 btcb/node/common.hpp
@@ -144,7 +144,7 @@ btcb/node/node.hpp
 boost/log/trivial.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/bootstrap.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/bootstrap.hpp
 btcb/node/common.hpp
 -
 btcb/secure/blockstore.hpp
@@ -166,7 +166,11 @@ boost/log/sources/logger.hpp
 boost/thread/thread.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/cli.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/btcb.hpp
+array
+-
+
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/cli.cpp
 btcb/lib/interface.h
 -
 btcb/node/cli.hpp
@@ -176,13 +180,13 @@ btcb/node/common.hpp
 btcb/node/node.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/cli.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/cli.hpp
 boost/program_options.hpp
 -
 btcb/lib/errors.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/common.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/common.cpp
 btcb/node/common.hpp
 -
 btcb/lib/work.hpp
@@ -192,7 +196,7 @@ btcb/node/wallet.hpp
 boost/endian/conversion.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/common.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/common.hpp
 btcb/lib/interface.h
 -
 btcb/secure/common.hpp
@@ -204,7 +208,7 @@ bitset
 xxhash/xxhash.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/lmdb.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/lmdb.cpp
 btcb/node/lmdb.hpp
 -
 btcb/lib/utility.hpp
@@ -218,7 +222,7 @@ boost/polymorphic_cast.hpp
 queue
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/lmdb.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/lmdb.hpp
 boost/filesystem.hpp
 -
 lmdb/libraries/liblmdb/lmdb.h
@@ -230,7 +234,7 @@ btcb/secure/blockstore.hpp
 btcb/secure/common.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/logging.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/logging.cpp
 boost/log/expressions.hpp
 -
 boost/log/utility/setup/common_attributes.hpp
@@ -242,7 +246,7 @@ boost/log/utility/setup/file.hpp
 btcb/node/logging.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/logging.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/logging.hpp
 boost/filesystem.hpp
 -
 boost/log/sources/logger.hpp
@@ -254,7 +258,7 @@ boost/property_tree/ptree.hpp
 cstdint
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/node.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/node.cpp
 btcb/node/node.hpp
 -
 btcb/lib/interface.h
@@ -278,7 +282,7 @@ boost/polymorphic_cast.hpp
 boost/property_tree/json_parser.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/node.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/node.hpp
 btcb/lib/work.hpp
 -
 btcb/node/bootstrap.hpp
@@ -316,13 +320,15 @@ boost/multi_index_container.hpp
 boost/thread/thread.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/nodeconfig.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/nodeconfig.cpp
 btcb/node/nodeconfig.hpp
 -
 btcb/node/node.hpp
 -
+btcb/node/btcb.hpp
+-
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/nodeconfig.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/nodeconfig.hpp
 boost/property_tree/ptree.hpp
 -
 chrono
@@ -336,7 +342,7 @@ btcb/node/stats.hpp
 vector
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/openclwork.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/openclwork.cpp
 btcb/node/openclwork.hpp
 -
 btcb/lib/utility.hpp
@@ -356,7 +362,7 @@ string
 vector
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/openclwork.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/openclwork.hpp
 btcb/node/xorshift.hpp
 -
 boost/optional.hpp
@@ -374,11 +380,11 @@ OpenCL/opencl.h
 CL/cl.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/peers.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/peers.cpp
 btcb/node/peers.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/peers.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/peers.hpp
 boost/asio/ip/address.hpp
 -
 boost/multi_index/hashed_index.hpp
@@ -408,13 +414,13 @@ unordered_set
 vector
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/plat/posix/openclapi.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/plat/posix/openclapi.cpp
 btcb/node/openclwork.hpp
 -
 dlfcn.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/portmapping.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/portmapping.cpp
 btcb/node/node.hpp
 -
 btcb/node/portmapping.hpp
@@ -422,7 +428,7 @@ btcb/node/portmapping.hpp
 upnpcommands.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/portmapping.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/portmapping.hpp
 boost/asio/ip/address_v4.hpp
 -
 miniupnpc.h
@@ -432,7 +438,7 @@ mutex
 btcb/lib/config.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/rpc.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/rpc.cpp
 boost/algorithm/string.hpp
 -
 btcb/node/rpc.hpp
@@ -446,7 +452,7 @@ btcb/node/rpc_secure.hpp
 btcb/lib/errors.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/rpc.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/rpc.hpp
 atomic
 -
 boost/asio.hpp
@@ -462,7 +468,7 @@ btcb/secure/utility.hpp
 unordered_map
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/rpc_secure.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/rpc_secure.hpp
 boost/asio/ssl/context.hpp
 -
 boost/asio/ssl/stream.hpp
@@ -470,7 +476,7 @@ boost/asio/ssl/stream.hpp
 btcb/node/rpc.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/stats.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/stats.cpp
 btcb/node/stats.hpp
 -
 boost/asio.hpp
@@ -490,7 +496,7 @@ sstream
 tuple
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/stats.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/stats.hpp
 atomic
 -
 boost/circular_buffer.hpp
@@ -510,7 +516,7 @@ string
 unordered_map
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/testing.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/testing.cpp
 boost/property_tree/json_parser.hpp
 -
 boost/property_tree/ptree.hpp
@@ -522,7 +528,7 @@ btcb/node/common.hpp
 btcb/node/testing.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/testing.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/testing.hpp
 chrono
 -
 btcb/lib/errors.hpp
@@ -530,13 +536,13 @@ btcb/lib/errors.hpp
 btcb/node/node.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/voting.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/voting.cpp
 btcb/node/voting.hpp
 -
 btcb/node/node.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/voting.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/voting.hpp
 btcb/lib/numbers.hpp
 -
 boost/thread.hpp
@@ -548,7 +554,7 @@ deque
 mutex
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/wallet.cpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/wallet.cpp
 btcb/lib/utility.hpp
 -
 btcb/node/wallet.hpp
@@ -568,7 +574,7 @@ boost/polymorphic_cast.hpp
 future
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/wallet.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/wallet.hpp
 boost/thread/thread.hpp
 -
 btcb/node/common.hpp
@@ -590,17 +596,17 @@ thread
 unordered_set
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/node/xorshift.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/node/xorshift.hpp
 array
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/secure/blockstore.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/secure/blockstore.hpp
 btcb/secure/common.hpp
 -
 stack
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/secure/common.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/secure/common.hpp
 btcb/lib/blockbuilders.hpp
 -
 btcb/lib/blocks.hpp
@@ -618,11 +624,11 @@ unordered_map
 blake2/blake2.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/secure/ledger.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/secure/ledger.hpp
 btcb/secure/common.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/secure/utility.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/secure/utility.hpp
 array
 -
 atomic
@@ -648,7 +654,7 @@ btcb/lib/interface.h
 btcb/lib/numbers.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/secure/versioning.hpp
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/secure/versioning.hpp
 btcb/lib/blocks.hpp
 -
 btcb/node/lmdb.hpp
@@ -656,89 +662,89 @@ btcb/node/lmdb.hpp
 btcb/secure/utility.hpp
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/aes.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/aes.h
 rijndael.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/rijndael.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/rijndael.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/algparam.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/algparam.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 smartptr.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/smartptr.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/smartptr.h
 secblock.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/secblock.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/secblock.h
 integer.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/integer.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/integer.h
 misc.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/misc.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/misc.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 stdcpp.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/stdcpp.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/stdcpp.h
 trap.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/trap.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/trap.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/filters.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/filters.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 simple.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/simple.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/simple.h
 secblock.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/secblock.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/secblock.h
 misc.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/misc.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/misc.h
 smartptr.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/smartptr.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/smartptr.h
 queue.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/queue.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/queue.h
 algparam.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/algparam.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/algparam.h
 stdcpp.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/stdcpp.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/stdcpp.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/fips140.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/fips140.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 secblock.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/secblock.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/secblock.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/integer.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/integer.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 secblock.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/secblock.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/secblock.h
 stdcpp.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/stdcpp.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/stdcpp.h
 iosfwd
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/iterhash.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/iterhash.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 secblock.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/secblock.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/secblock.h
 misc.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/misc.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/misc.h
 simple.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/simple.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/simple.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/misc.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/misc.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 stdcpp.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/stdcpp.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/stdcpp.h
 smartptr.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/smartptr.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/smartptr.h
 intrin.h
 -
 mem.h
@@ -750,101 +756,101 @@ byteswap.h
 immintrin.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/osrng.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/osrng.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 randpool.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/randpool.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/randpool.h
 smartptr.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/smartptr.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/smartptr.h
 fips140.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/fips140.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/fips140.h
 rng.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/rng.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/rng.h
 aes.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/aes.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/aes.h
 sha.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/sha.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/sha.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/ossig.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/ossig.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 signal.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/queue.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/queue.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 simple.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/simple.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/simple.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/randpool.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/randpool.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 filters.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/filters.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/filters.h
 secblock.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/secblock.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/secblock.h
 smartptr.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/smartptr.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/smartptr.h
 aes.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/aes.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/aes.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/rijndael.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/rijndael.h
 seckey.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/seckey.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/seckey.h
 secblock.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/secblock.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/secblock.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/rng.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/rng.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 filters.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/filters.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/filters.h
 smartptr.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/smartptr.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/smartptr.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/secblock.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/secblock.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 stdcpp.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/stdcpp.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/stdcpp.h
 misc.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/misc.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/misc.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/seckey.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/seckey.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 misc.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/misc.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/misc.h
 simple.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/simple.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/simple.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/sha.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/sha.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 iterhash.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/iterhash.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/iterhash.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/simple.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/simple.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 cryptlib.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/cryptlib.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/cryptlib.h
 misc.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/misc.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/misc.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/smartptr.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/smartptr.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 stdcpp.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/stdcpp.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/stdcpp.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/stdcpp.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/stdcpp.h
 intrin.h
 -
 string
@@ -896,57 +902,57 @@ stddef.h
 vector.cc
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/trap.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/trap.h
 config.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/config.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/config.h
 iostream
 -
 sstream
 -
 ossig.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/cryptopp/ossig.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/cryptopp/ossig.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/lmdb.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/lmdb.h
 sys/types.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc.h
 miniupnpc_declspec.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
 igd_desc_parse.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.h
 upnpdev.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpdev.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpdev.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpctypes.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpctypes.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/portlistingparse.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/portlistingparse.h
 miniupnpc_declspec.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
 miniupnpctypes.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpctypes.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpctypes.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpcommands.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpcommands.h
 upnpreplyparse.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpreplyparse.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpreplyparse.h
 portlistingparse.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/portlistingparse.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/portlistingparse.h
 miniupnpc_declspec.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
 miniupnpctypes.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpctypes.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpctypes.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpdev.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpdev.h
 miniupnpc_declspec.h
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc_declspec.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpreplyparse.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpreplyparse.h
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/phc-winner-argon2/include/argon2.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/phc-winner-argon2/include/argon2.h
 stdint.h
 -
 stddef.h
@@ -954,7 +960,7 @@ stddef.h
 limits.h
 -
 
-/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/xxhash/xxhash.h
+/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/xxhash/xxhash.h
 stddef.h
 -
 

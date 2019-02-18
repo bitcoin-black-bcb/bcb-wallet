@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb
+CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build
+CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build
 
 # Include any dependencies generated for this target.
 include miniupnp/miniupnpc/CMakeFiles/testminixml.dir/depend.make
@@ -58,17 +58,17 @@ include miniupnp/miniupnpc/CMakeFiles/testminixml.dir/progress.make
 include miniupnp/miniupnpc/CMakeFiles/testminixml.dir/flags.make
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o: miniupnp/miniupnpc/CMakeFiles/testminixml.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/testminixml.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testminixml.dir/testminixml.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/testminixml.c
+miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/testminixml.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testminixml.dir/testminixml.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/testminixml.c
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testminixml.dir/testminixml.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/testminixml.c > CMakeFiles/testminixml.dir/testminixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/testminixml.c > CMakeFiles/testminixml.dir/testminixml.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testminixml.dir/testminixml.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/testminixml.c -o CMakeFiles/testminixml.dir/testminixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/testminixml.c -o CMakeFiles/testminixml.dir/testminixml.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o.requires:
 
@@ -82,17 +82,17 @@ miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o.provides.build: mi
 
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o: miniupnp/miniupnpc/CMakeFiles/testminixml.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minixml.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testminixml.dir/minixml.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minixml.c
+miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minixml.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testminixml.dir/minixml.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minixml.c
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testminixml.dir/minixml.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minixml.c > CMakeFiles/testminixml.dir/minixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minixml.c > CMakeFiles/testminixml.dir/minixml.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testminixml.dir/minixml.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minixml.c -o CMakeFiles/testminixml.dir/minixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minixml.c -o CMakeFiles/testminixml.dir/minixml.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o.requires:
 
@@ -106,17 +106,17 @@ miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o.provides.build: miniup
 
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o: miniupnp/miniupnpc/CMakeFiles/testminixml.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testminixml.dir/igd_desc_parse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.c
+miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testminixml.dir/igd_desc_parse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.c
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testminixml.dir/igd_desc_parse.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.c > CMakeFiles/testminixml.dir/igd_desc_parse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.c > CMakeFiles/testminixml.dir/igd_desc_parse.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testminixml.dir/igd_desc_parse.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.c -o CMakeFiles/testminixml.dir/igd_desc_parse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.c -o CMakeFiles/testminixml.dir/igd_desc_parse.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o.requires:
 
@@ -143,8 +143,8 @@ testminixml: miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o
 testminixml: miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o
 testminixml: miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make
 testminixml: miniupnp/miniupnpc/CMakeFiles/testminixml.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ../../testminixml"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testminixml.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ../../testminixml"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testminixml.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build: testminixml
@@ -158,10 +158,10 @@ miniupnp/miniupnpc/CMakeFiles/testminixml.dir/requires: miniupnp/miniupnpc/CMake
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testminixml.dir/requires
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/clean:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && $(CMAKE_COMMAND) -P CMakeFiles/testminixml.dir/cmake_clean.cmake
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && $(CMAKE_COMMAND) -P CMakeFiles/testminixml.dir/cmake_clean.cmake
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testminixml.dir/clean
 
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/depend:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc/CMakeFiles/testminixml.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc/CMakeFiles/testminixml.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testminixml.dir/depend
 

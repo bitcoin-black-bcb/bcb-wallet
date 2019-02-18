@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb
+CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build
+CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build
 
 # Include any dependencies generated for this target.
 include btcb/btcb_node/CMakeFiles/btcb_node.dir/depend.make
@@ -58,17 +58,17 @@ include btcb/btcb_node/CMakeFiles/btcb_node.dir/progress.make
 include btcb/btcb_node/CMakeFiles/btcb_node.dir/flags.make
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.o: btcb/btcb_node/CMakeFiles/btcb_node.dir/flags.make
-btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node/daemon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/btcb_node.dir/daemon.cpp.o -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node/daemon.cpp
+btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node/daemon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/btcb_node.dir/daemon.cpp.o -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node/daemon.cpp
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/btcb_node.dir/daemon.cpp.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node/daemon.cpp > CMakeFiles/btcb_node.dir/daemon.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node/daemon.cpp > CMakeFiles/btcb_node.dir/daemon.cpp.i
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/btcb_node.dir/daemon.cpp.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node/daemon.cpp -o CMakeFiles/btcb_node.dir/daemon.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node/daemon.cpp -o CMakeFiles/btcb_node.dir/daemon.cpp.s
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.o.requires:
 
@@ -82,17 +82,17 @@ btcb/btcb_node/CMakeFiles/btcb_node.dir/daemon.cpp.o.provides.build: btcb/btcb_n
 
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/entry.cpp.o: btcb/btcb_node/CMakeFiles/btcb_node.dir/flags.make
-btcb/btcb_node/CMakeFiles/btcb_node.dir/entry.cpp.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node/entry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object btcb/btcb_node/CMakeFiles/btcb_node.dir/entry.cpp.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/btcb_node.dir/entry.cpp.o -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node/entry.cpp
+btcb/btcb_node/CMakeFiles/btcb_node.dir/entry.cpp.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node/entry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object btcb/btcb_node/CMakeFiles/btcb_node.dir/entry.cpp.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/btcb_node.dir/entry.cpp.o -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node/entry.cpp
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/entry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/btcb_node.dir/entry.cpp.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node/entry.cpp > CMakeFiles/btcb_node.dir/entry.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node/entry.cpp > CMakeFiles/btcb_node.dir/entry.cpp.i
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/entry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/btcb_node.dir/entry.cpp.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node/entry.cpp -o CMakeFiles/btcb_node.dir/entry.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node/entry.cpp -o CMakeFiles/btcb_node.dir/entry.cpp.s
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/entry.cpp.o.requires:
 
@@ -123,7 +123,7 @@ btcb_node: ed25519-donna/libed25519.a
 btcb_node: btcb/lib/libbtcb_lib.a
 btcb_node: libxxhash.a
 btcb_node: libblake2.a
-btcb_node: libcryptopp.a
+btcb_node: cryptopp/libcryptopp.a
 btcb_node: miniupnp/miniupnpc/libminiupnpc.a
 btcb_node: liblmdb.a
 btcb_node: /usr/local/boost/lib/libboost_log.a
@@ -137,8 +137,8 @@ btcb_node: /usr/local/boost/lib/libboost_chrono.a
 btcb_node: /usr/local/boost/lib/libboost_system.a
 btcb_node: /usr/local/boost/lib/libboost_atomic.a
 btcb_node: btcb/btcb_node/CMakeFiles/btcb_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../btcb_node"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/btcb_node.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../btcb_node"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/btcb_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 btcb/btcb_node/CMakeFiles/btcb_node.dir/build: btcb_node
@@ -151,10 +151,10 @@ btcb/btcb_node/CMakeFiles/btcb_node.dir/requires: btcb/btcb_node/CMakeFiles/btcb
 .PHONY : btcb/btcb_node/CMakeFiles/btcb_node.dir/requires
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/clean:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node && $(CMAKE_COMMAND) -P CMakeFiles/btcb_node.dir/cmake_clean.cmake
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node && $(CMAKE_COMMAND) -P CMakeFiles/btcb_node.dir/cmake_clean.cmake
 .PHONY : btcb/btcb_node/CMakeFiles/btcb_node.dir/clean
 
 btcb/btcb_node/CMakeFiles/btcb_node.dir/depend:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/btcb_node /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/btcb_node/CMakeFiles/btcb_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/btcb_node /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/btcb_node/CMakeFiles/btcb_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : btcb/btcb_node/CMakeFiles/btcb_node.dir/depend
 

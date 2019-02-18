@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb
+CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build
+CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -104,7 +104,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CPackSourceConfig.cmake
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -115,7 +115,7 @@ package_source/fast: package_source
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -148,14 +148,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc/CMakeFiles/progress.marks
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles 0
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc/CMakeFiles/progress.marks
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/clean
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/clean
 .PHONY : clean
 
 # The main clean target
@@ -165,22 +165,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/preinstall
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/preinstall
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/rule:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/rule
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/rule
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/rule
 
 # Convenience name for target.
@@ -190,12 +190,12 @@ testminiwget: miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/rule
 
 # fast build rule for target.
 testminiwget/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build
 .PHONY : testminiwget/fast
 
 # Convenience name for target.
 miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/rule:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/rule
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/rule
 .PHONY : miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/rule
 
 # Convenience name for target.
@@ -205,12 +205,12 @@ upnpc-static: miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/rule
 
 # fast build rule for target.
 upnpc-static/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build
 .PHONY : upnpc-static/fast
 
 # Convenience name for target.
 miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule
 .PHONY : miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule
 
 # Convenience name for target.
@@ -220,12 +220,12 @@ libminiupnpc-static: miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/rule
 
 # fast build rule for target.
 libminiupnpc-static/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build
 .PHONY : libminiupnpc-static/fast
 
 # Convenience name for target.
 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/rule:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/rule
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/testminixml.dir/rule
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testminixml.dir/rule
 
 # Convenience name for target.
@@ -235,12 +235,12 @@ testminixml: miniupnp/miniupnpc/CMakeFiles/testminixml.dir/rule
 
 # fast build rule for target.
 testminixml/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build
 .PHONY : testminixml/fast
 
 # Convenience name for target.
 miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/rule:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/rule
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/rule
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/rule
 
 # Convenience name for target.
@@ -250,12 +250,12 @@ testupnpreplyparse: miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/rule
 
 # fast build rule for target.
 testupnpreplyparse/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build
 .PHONY : testupnpreplyparse/fast
 
 # Convenience name for target.
 miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/rule:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/rule
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/rule
 .PHONY : miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/rule
 
 # Convenience name for target.
@@ -265,12 +265,12 @@ minixmlvalid: miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/rule
 
 # fast build rule for target.
 minixmlvalid/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build
 .PHONY : minixmlvalid/fast
 
 # Convenience name for target.
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/rule:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/rule
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/rule
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/rule
 
 # Convenience name for target.
@@ -280,7 +280,7 @@ testigddescparse: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/rule
 
 # fast build rule for target.
 testigddescparse/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build
 .PHONY : testigddescparse/fast
 
 connecthostport.o: connecthostport.c.o
@@ -289,9 +289,9 @@ connecthostport.o: connecthostport.c.o
 
 # target to build an object file
 connecthostport.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/connecthostport.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/connecthostport.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o
 .PHONY : connecthostport.c.o
 
 connecthostport.i: connecthostport.c.i
@@ -300,9 +300,9 @@ connecthostport.i: connecthostport.c.i
 
 # target to preprocess a source file
 connecthostport.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/connecthostport.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/connecthostport.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.i
 .PHONY : connecthostport.c.i
 
 connecthostport.s: connecthostport.c.s
@@ -311,9 +311,9 @@ connecthostport.s: connecthostport.c.s
 
 # target to generate assembly for a file
 connecthostport.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/connecthostport.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/connecthostport.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/connecthostport.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.s
 .PHONY : connecthostport.c.s
 
 igd_desc_parse.o: igd_desc_parse.c.o
@@ -322,10 +322,10 @@ igd_desc_parse.o: igd_desc_parse.c.o
 
 # target to build an object file
 igd_desc_parse.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/igd_desc_parse.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/igd_desc_parse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o
 .PHONY : igd_desc_parse.c.o
 
 igd_desc_parse.i: igd_desc_parse.c.i
@@ -334,10 +334,10 @@ igd_desc_parse.i: igd_desc_parse.c.i
 
 # target to preprocess a source file
 igd_desc_parse.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/igd_desc_parse.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/igd_desc_parse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.i
 .PHONY : igd_desc_parse.c.i
 
 igd_desc_parse.s: igd_desc_parse.c.s
@@ -346,10 +346,10 @@ igd_desc_parse.s: igd_desc_parse.c.s
 
 # target to generate assembly for a file
 igd_desc_parse.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/igd_desc_parse.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/igd_desc_parse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/igd_desc_parse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/igd_desc_parse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.s
 .PHONY : igd_desc_parse.c.s
 
 minisoap.o: minisoap.c.o
@@ -358,9 +358,9 @@ minisoap.o: minisoap.c.o
 
 # target to build an object file
 minisoap.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minisoap.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minisoap.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o
 .PHONY : minisoap.c.o
 
 minisoap.i: minisoap.c.i
@@ -369,9 +369,9 @@ minisoap.i: minisoap.c.i
 
 # target to preprocess a source file
 minisoap.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minisoap.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minisoap.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.i
 .PHONY : minisoap.c.i
 
 minisoap.s: minisoap.c.s
@@ -380,9 +380,9 @@ minisoap.s: minisoap.c.s
 
 # target to generate assembly for a file
 minisoap.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minisoap.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minisoap.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minisoap.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.s
 .PHONY : minisoap.c.s
 
 minissdpc.o: minissdpc.c.o
@@ -391,9 +391,9 @@ minissdpc.o: minissdpc.c.o
 
 # target to build an object file
 minissdpc.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minissdpc.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minissdpc.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o
 .PHONY : minissdpc.c.o
 
 minissdpc.i: minissdpc.c.i
@@ -402,9 +402,9 @@ minissdpc.i: minissdpc.c.i
 
 # target to preprocess a source file
 minissdpc.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minissdpc.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minissdpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.i
 .PHONY : minissdpc.c.i
 
 minissdpc.s: minissdpc.c.s
@@ -413,9 +413,9 @@ minissdpc.s: minissdpc.c.s
 
 # target to generate assembly for a file
 minissdpc.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minissdpc.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minissdpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minissdpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.s
 .PHONY : minissdpc.c.s
 
 miniupnpc.o: miniupnpc.c.o
@@ -424,9 +424,9 @@ miniupnpc.o: miniupnpc.c.o
 
 # target to build an object file
 miniupnpc.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniupnpc.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniupnpc.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o
 .PHONY : miniupnpc.c.o
 
 miniupnpc.i: miniupnpc.c.i
@@ -435,9 +435,9 @@ miniupnpc.i: miniupnpc.c.i
 
 # target to preprocess a source file
 miniupnpc.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniupnpc.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniupnpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.i
 .PHONY : miniupnpc.c.i
 
 miniupnpc.s: miniupnpc.c.s
@@ -446,9 +446,9 @@ miniupnpc.s: miniupnpc.c.s
 
 # target to generate assembly for a file
 miniupnpc.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniupnpc.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniupnpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniupnpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.s
 .PHONY : miniupnpc.c.s
 
 miniwget.o: miniwget.c.o
@@ -457,9 +457,9 @@ miniwget.o: miniwget.c.o
 
 # target to build an object file
 miniwget.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniwget.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniwget.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o
 .PHONY : miniwget.c.o
 
 miniwget.i: miniwget.c.i
@@ -468,9 +468,9 @@ miniwget.i: miniwget.c.i
 
 # target to preprocess a source file
 miniwget.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniwget.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniwget.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.i
 .PHONY : miniwget.c.i
 
 miniwget.s: miniwget.c.s
@@ -479,9 +479,9 @@ miniwget.s: miniwget.c.s
 
 # target to generate assembly for a file
 miniwget.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniwget.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/miniwget.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/miniwget.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.s
 .PHONY : miniwget.c.s
 
 minixml.o: minixml.c.o
@@ -490,12 +490,12 @@ minixml.o: minixml.c.o
 
 # target to build an object file
 minixml.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minixml.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/minixml.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixml.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minixml.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/minixml.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixml.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o
 .PHONY : minixml.c.o
 
 minixml.i: minixml.c.i
@@ -504,12 +504,12 @@ minixml.i: minixml.c.i
 
 # target to preprocess a source file
 minixml.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minixml.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/minixml.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixml.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/minixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.i
 .PHONY : minixml.c.i
 
 minixml.s: minixml.c.s
@@ -518,12 +518,12 @@ minixml.s: minixml.c.s
 
 # target to generate assembly for a file
 minixml.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minixml.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/minixml.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixml.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/minixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/minixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/minixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/minixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.s
 .PHONY : minixml.c.s
 
 minixmlvalid.o: minixmlvalid.c.o
@@ -532,7 +532,7 @@ minixmlvalid.o: minixmlvalid.c.o
 
 # target to build an object file
 minixmlvalid.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixmlvalid.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixmlvalid.c.o
 .PHONY : minixmlvalid.c.o
 
 minixmlvalid.i: minixmlvalid.c.i
@@ -541,7 +541,7 @@ minixmlvalid.i: minixmlvalid.c.i
 
 # target to preprocess a source file
 minixmlvalid.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixmlvalid.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixmlvalid.c.i
 .PHONY : minixmlvalid.c.i
 
 minixmlvalid.s: minixmlvalid.c.s
@@ -550,7 +550,7 @@ minixmlvalid.s: minixmlvalid.c.s
 
 # target to generate assembly for a file
 minixmlvalid.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixmlvalid.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/build.make miniupnp/miniupnpc/CMakeFiles/minixmlvalid.dir/minixmlvalid.c.s
 .PHONY : minixmlvalid.c.s
 
 portlistingparse.o: portlistingparse.c.o
@@ -559,9 +559,9 @@ portlistingparse.o: portlistingparse.c.o
 
 # target to build an object file
 portlistingparse.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/portlistingparse.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/portlistingparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o
 .PHONY : portlistingparse.c.o
 
 portlistingparse.i: portlistingparse.c.i
@@ -570,9 +570,9 @@ portlistingparse.i: portlistingparse.c.i
 
 # target to preprocess a source file
 portlistingparse.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/portlistingparse.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/portlistingparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.i
 .PHONY : portlistingparse.c.i
 
 portlistingparse.s: portlistingparse.c.s
@@ -581,9 +581,9 @@ portlistingparse.s: portlistingparse.c.s
 
 # target to generate assembly for a file
 portlistingparse.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/portlistingparse.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/portlistingparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/portlistingparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.s
 .PHONY : portlistingparse.c.s
 
 receivedata.o: receivedata.c.o
@@ -592,9 +592,9 @@ receivedata.o: receivedata.c.o
 
 # target to build an object file
 receivedata.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/receivedata.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/receivedata.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o
 .PHONY : receivedata.c.o
 
 receivedata.i: receivedata.c.i
@@ -603,9 +603,9 @@ receivedata.i: receivedata.c.i
 
 # target to preprocess a source file
 receivedata.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/receivedata.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/receivedata.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.i
 .PHONY : receivedata.c.i
 
 receivedata.s: receivedata.c.s
@@ -614,9 +614,9 @@ receivedata.s: receivedata.c.s
 
 # target to generate assembly for a file
 receivedata.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/receivedata.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/receivedata.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/receivedata.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.s
 .PHONY : receivedata.c.s
 
 testigddescparse.o: testigddescparse.c.o
@@ -625,7 +625,7 @@ testigddescparse.o: testigddescparse.c.o
 
 # target to build an object file
 testigddescparse.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o
 .PHONY : testigddescparse.c.o
 
 testigddescparse.i: testigddescparse.c.i
@@ -634,7 +634,7 @@ testigddescparse.i: testigddescparse.c.i
 
 # target to preprocess a source file
 testigddescparse.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.i
 .PHONY : testigddescparse.c.i
 
 testigddescparse.s: testigddescparse.c.s
@@ -643,7 +643,7 @@ testigddescparse.s: testigddescparse.c.s
 
 # target to generate assembly for a file
 testigddescparse.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.s
 .PHONY : testigddescparse.c.s
 
 testminiwget.o: testminiwget.c.o
@@ -652,7 +652,7 @@ testminiwget.o: testminiwget.c.o
 
 # target to build an object file
 testminiwget.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/testminiwget.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/testminiwget.c.o
 .PHONY : testminiwget.c.o
 
 testminiwget.i: testminiwget.c.i
@@ -661,7 +661,7 @@ testminiwget.i: testminiwget.c.i
 
 # target to preprocess a source file
 testminiwget.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/testminiwget.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/testminiwget.c.i
 .PHONY : testminiwget.c.i
 
 testminiwget.s: testminiwget.c.s
@@ -670,7 +670,7 @@ testminiwget.s: testminiwget.c.s
 
 # target to generate assembly for a file
 testminiwget.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/testminiwget.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/testminiwget.c.s
 .PHONY : testminiwget.c.s
 
 testminixml.o: testminixml.c.o
@@ -679,7 +679,7 @@ testminixml.o: testminixml.c.o
 
 # target to build an object file
 testminixml.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.o
 .PHONY : testminixml.c.o
 
 testminixml.i: testminixml.c.i
@@ -688,7 +688,7 @@ testminixml.i: testminixml.c.i
 
 # target to preprocess a source file
 testminixml.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.i
 .PHONY : testminixml.c.i
 
 testminixml.s: testminixml.c.s
@@ -697,7 +697,7 @@ testminixml.s: testminixml.c.s
 
 # target to generate assembly for a file
 testminixml.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminixml.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminixml.dir/testminixml.c.s
 .PHONY : testminixml.c.s
 
 testupnpreplyparse.o: testupnpreplyparse.c.o
@@ -706,7 +706,7 @@ testupnpreplyparse.o: testupnpreplyparse.c.o
 
 # target to build an object file
 testupnpreplyparse.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/testupnpreplyparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/testupnpreplyparse.c.o
 .PHONY : testupnpreplyparse.c.o
 
 testupnpreplyparse.i: testupnpreplyparse.c.i
@@ -715,7 +715,7 @@ testupnpreplyparse.i: testupnpreplyparse.c.i
 
 # target to preprocess a source file
 testupnpreplyparse.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/testupnpreplyparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/testupnpreplyparse.c.i
 .PHONY : testupnpreplyparse.c.i
 
 testupnpreplyparse.s: testupnpreplyparse.c.s
@@ -724,7 +724,7 @@ testupnpreplyparse.s: testupnpreplyparse.c.s
 
 # target to generate assembly for a file
 testupnpreplyparse.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/testupnpreplyparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/testupnpreplyparse.c.s
 .PHONY : testupnpreplyparse.c.s
 
 upnpc.o: upnpc.c.o
@@ -733,7 +733,7 @@ upnpc.o: upnpc.c.o
 
 # target to build an object file
 upnpc.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/upnpc.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/upnpc.c.o
 .PHONY : upnpc.c.o
 
 upnpc.i: upnpc.c.i
@@ -742,7 +742,7 @@ upnpc.i: upnpc.c.i
 
 # target to preprocess a source file
 upnpc.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/upnpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/upnpc.c.i
 .PHONY : upnpc.c.i
 
 upnpc.s: upnpc.c.s
@@ -751,7 +751,7 @@ upnpc.s: upnpc.c.s
 
 # target to generate assembly for a file
 upnpc.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/upnpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/upnpc-static.dir/upnpc.c.s
 .PHONY : upnpc.c.s
 
 upnpcommands.o: upnpcommands.c.o
@@ -760,9 +760,9 @@ upnpcommands.o: upnpcommands.c.o
 
 # target to build an object file
 upnpcommands.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpcommands.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpcommands.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o
 .PHONY : upnpcommands.c.o
 
 upnpcommands.i: upnpcommands.c.i
@@ -771,9 +771,9 @@ upnpcommands.i: upnpcommands.c.i
 
 # target to preprocess a source file
 upnpcommands.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpcommands.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpcommands.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.i
 .PHONY : upnpcommands.c.i
 
 upnpcommands.s: upnpcommands.c.s
@@ -782,9 +782,9 @@ upnpcommands.s: upnpcommands.c.s
 
 # target to generate assembly for a file
 upnpcommands.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpcommands.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpcommands.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpcommands.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.s
 .PHONY : upnpcommands.c.s
 
 upnpdev.o: upnpdev.c.o
@@ -793,7 +793,7 @@ upnpdev.o: upnpdev.c.o
 
 # target to build an object file
 upnpdev.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.o
 .PHONY : upnpdev.c.o
 
 upnpdev.i: upnpdev.c.i
@@ -802,7 +802,7 @@ upnpdev.i: upnpdev.c.i
 
 # target to preprocess a source file
 upnpdev.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.i
 .PHONY : upnpdev.c.i
 
 upnpdev.s: upnpdev.c.s
@@ -811,7 +811,7 @@ upnpdev.s: upnpdev.c.s
 
 # target to generate assembly for a file
 upnpdev.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpdev.c.s
 .PHONY : upnpdev.c.s
 
 upnperrors.o: upnperrors.c.o
@@ -820,7 +820,7 @@ upnperrors.o: upnperrors.c.o
 
 # target to build an object file
 upnperrors.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.o
 .PHONY : upnperrors.c.o
 
 upnperrors.i: upnperrors.c.i
@@ -829,7 +829,7 @@ upnperrors.i: upnperrors.c.i
 
 # target to preprocess a source file
 upnperrors.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.i
 .PHONY : upnperrors.c.i
 
 upnperrors.s: upnperrors.c.s
@@ -838,7 +838,7 @@ upnperrors.s: upnperrors.c.s
 
 # target to generate assembly for a file
 upnperrors.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnperrors.c.s
 .PHONY : upnperrors.c.s
 
 upnpreplyparse.o: upnpreplyparse.c.o
@@ -847,10 +847,10 @@ upnpreplyparse.o: upnpreplyparse.c.o
 
 # target to build an object file
 upnpreplyparse.c.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpreplyparse.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/upnpreplyparse.c.o
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpreplyparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/upnpreplyparse.c.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o
 .PHONY : upnpreplyparse.c.o
 
 upnpreplyparse.i: upnpreplyparse.c.i
@@ -859,10 +859,10 @@ upnpreplyparse.i: upnpreplyparse.c.i
 
 # target to preprocess a source file
 upnpreplyparse.c.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpreplyparse.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/upnpreplyparse.c.i
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpreplyparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/upnpreplyparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.i
 .PHONY : upnpreplyparse.c.i
 
 upnpreplyparse.s: upnpreplyparse.c.s
@@ -871,10 +871,10 @@ upnpreplyparse.s: upnpreplyparse.c.s
 
 # target to generate assembly for a file
 upnpreplyparse.c.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpreplyparse.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/upnpreplyparse.c.s
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/build.make miniupnp/miniupnpc/CMakeFiles/testminiwget.dir/upnpreplyparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/upnpreplyparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testupnpreplyparse.dir/upnpreplyparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.s
 .PHONY : upnpreplyparse.c.s
 
 # Help Target
@@ -966,6 +966,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

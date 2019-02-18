@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb
+CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build
+CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -95,7 +95,7 @@ install/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -106,7 +106,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CPackSourceConfig.cmake
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,7 +117,7 @@ package_source/fast: package_source
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -148,14 +148,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/btcb/lib/CMakeFiles/progress.marks
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles 0
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/btcb/lib/CMakeFiles/progress.marks
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/clean
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -165,22 +165,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/preinstall
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/preinstall
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 btcb/lib/CMakeFiles/btcb_lib.dir/rule:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/CMakeFiles/btcb_lib.dir/rule
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f CMakeFiles/Makefile2 btcb/lib/CMakeFiles/btcb_lib.dir/rule
 .PHONY : btcb/lib/CMakeFiles/btcb_lib.dir/rule
 
 # Convenience name for target.
@@ -190,7 +190,7 @@ btcb_lib: btcb/lib/CMakeFiles/btcb_lib.dir/rule
 
 # fast build rule for target.
 btcb_lib/fast:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/build
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/build
 .PHONY : btcb_lib/fast
 
 blockbuilders.o: blockbuilders.cpp.o
@@ -199,7 +199,7 @@ blockbuilders.o: blockbuilders.cpp.o
 
 # target to build an object file
 blockbuilders.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blockbuilders.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blockbuilders.cpp.o
 .PHONY : blockbuilders.cpp.o
 
 blockbuilders.i: blockbuilders.cpp.i
@@ -208,7 +208,7 @@ blockbuilders.i: blockbuilders.cpp.i
 
 # target to preprocess a source file
 blockbuilders.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blockbuilders.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blockbuilders.cpp.i
 .PHONY : blockbuilders.cpp.i
 
 blockbuilders.s: blockbuilders.cpp.s
@@ -217,7 +217,7 @@ blockbuilders.s: blockbuilders.cpp.s
 
 # target to generate assembly for a file
 blockbuilders.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blockbuilders.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blockbuilders.cpp.s
 .PHONY : blockbuilders.cpp.s
 
 blocks.o: blocks.cpp.o
@@ -226,7 +226,7 @@ blocks.o: blocks.cpp.o
 
 # target to build an object file
 blocks.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blocks.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blocks.cpp.o
 .PHONY : blocks.cpp.o
 
 blocks.i: blocks.cpp.i
@@ -235,7 +235,7 @@ blocks.i: blocks.cpp.i
 
 # target to preprocess a source file
 blocks.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blocks.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blocks.cpp.i
 .PHONY : blocks.cpp.i
 
 blocks.s: blocks.cpp.s
@@ -244,7 +244,7 @@ blocks.s: blocks.cpp.s
 
 # target to generate assembly for a file
 blocks.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blocks.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/blocks.cpp.s
 .PHONY : blocks.cpp.s
 
 errors.o: errors.cpp.o
@@ -253,7 +253,7 @@ errors.o: errors.cpp.o
 
 # target to build an object file
 errors.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/errors.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/errors.cpp.o
 .PHONY : errors.cpp.o
 
 errors.i: errors.cpp.i
@@ -262,7 +262,7 @@ errors.i: errors.cpp.i
 
 # target to preprocess a source file
 errors.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/errors.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/errors.cpp.i
 .PHONY : errors.cpp.i
 
 errors.s: errors.cpp.s
@@ -271,7 +271,7 @@ errors.s: errors.cpp.s
 
 # target to generate assembly for a file
 errors.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/errors.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/errors.cpp.s
 .PHONY : errors.cpp.s
 
 interface.o: interface.cpp.o
@@ -280,7 +280,7 @@ interface.o: interface.cpp.o
 
 # target to build an object file
 interface.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/interface.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/interface.cpp.o
 .PHONY : interface.cpp.o
 
 interface.i: interface.cpp.i
@@ -289,7 +289,7 @@ interface.i: interface.cpp.i
 
 # target to preprocess a source file
 interface.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/interface.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/interface.cpp.i
 .PHONY : interface.cpp.i
 
 interface.s: interface.cpp.s
@@ -298,7 +298,7 @@ interface.s: interface.cpp.s
 
 # target to generate assembly for a file
 interface.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/interface.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/interface.cpp.s
 .PHONY : interface.cpp.s
 
 numbers.o: numbers.cpp.o
@@ -307,7 +307,7 @@ numbers.o: numbers.cpp.o
 
 # target to build an object file
 numbers.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/numbers.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/numbers.cpp.o
 .PHONY : numbers.cpp.o
 
 numbers.i: numbers.cpp.i
@@ -316,7 +316,7 @@ numbers.i: numbers.cpp.i
 
 # target to preprocess a source file
 numbers.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/numbers.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/numbers.cpp.i
 .PHONY : numbers.cpp.i
 
 numbers.s: numbers.cpp.s
@@ -325,7 +325,7 @@ numbers.s: numbers.cpp.s
 
 # target to generate assembly for a file
 numbers.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/numbers.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/numbers.cpp.s
 .PHONY : numbers.cpp.s
 
 plat/linux/priority.o: plat/linux/priority.cpp.o
@@ -334,7 +334,7 @@ plat/linux/priority.o: plat/linux/priority.cpp.o
 
 # target to build an object file
 plat/linux/priority.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/priority.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/priority.cpp.o
 .PHONY : plat/linux/priority.cpp.o
 
 plat/linux/priority.i: plat/linux/priority.cpp.i
@@ -343,7 +343,7 @@ plat/linux/priority.i: plat/linux/priority.cpp.i
 
 # target to preprocess a source file
 plat/linux/priority.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/priority.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/priority.cpp.i
 .PHONY : plat/linux/priority.cpp.i
 
 plat/linux/priority.s: plat/linux/priority.cpp.s
@@ -352,7 +352,7 @@ plat/linux/priority.s: plat/linux/priority.cpp.s
 
 # target to generate assembly for a file
 plat/linux/priority.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/priority.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/priority.cpp.s
 .PHONY : plat/linux/priority.cpp.s
 
 plat/linux/thread_role.o: plat/linux/thread_role.cpp.o
@@ -361,7 +361,7 @@ plat/linux/thread_role.o: plat/linux/thread_role.cpp.o
 
 # target to build an object file
 plat/linux/thread_role.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/thread_role.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/thread_role.cpp.o
 .PHONY : plat/linux/thread_role.cpp.o
 
 plat/linux/thread_role.i: plat/linux/thread_role.cpp.i
@@ -370,7 +370,7 @@ plat/linux/thread_role.i: plat/linux/thread_role.cpp.i
 
 # target to preprocess a source file
 plat/linux/thread_role.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/thread_role.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/thread_role.cpp.i
 .PHONY : plat/linux/thread_role.cpp.i
 
 plat/linux/thread_role.s: plat/linux/thread_role.cpp.s
@@ -379,7 +379,7 @@ plat/linux/thread_role.s: plat/linux/thread_role.cpp.s
 
 # target to generate assembly for a file
 plat/linux/thread_role.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/thread_role.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/linux/thread_role.cpp.s
 .PHONY : plat/linux/thread_role.cpp.s
 
 plat/posix/perms.o: plat/posix/perms.cpp.o
@@ -388,7 +388,7 @@ plat/posix/perms.o: plat/posix/perms.cpp.o
 
 # target to build an object file
 plat/posix/perms.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/posix/perms.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/posix/perms.cpp.o
 .PHONY : plat/posix/perms.cpp.o
 
 plat/posix/perms.i: plat/posix/perms.cpp.i
@@ -397,7 +397,7 @@ plat/posix/perms.i: plat/posix/perms.cpp.i
 
 # target to preprocess a source file
 plat/posix/perms.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/posix/perms.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/posix/perms.cpp.i
 .PHONY : plat/posix/perms.cpp.i
 
 plat/posix/perms.s: plat/posix/perms.cpp.s
@@ -406,7 +406,7 @@ plat/posix/perms.s: plat/posix/perms.cpp.s
 
 # target to generate assembly for a file
 plat/posix/perms.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/posix/perms.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/plat/posix/perms.cpp.s
 .PHONY : plat/posix/perms.cpp.s
 
 utility.o: utility.cpp.o
@@ -415,7 +415,7 @@ utility.o: utility.cpp.o
 
 # target to build an object file
 utility.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/utility.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/utility.cpp.o
 .PHONY : utility.cpp.o
 
 utility.i: utility.cpp.i
@@ -424,7 +424,7 @@ utility.i: utility.cpp.i
 
 # target to preprocess a source file
 utility.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/utility.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/utility.cpp.i
 .PHONY : utility.cpp.i
 
 utility.s: utility.cpp.s
@@ -433,7 +433,7 @@ utility.s: utility.cpp.s
 
 # target to generate assembly for a file
 utility.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/utility.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/utility.cpp.s
 .PHONY : utility.cpp.s
 
 work.o: work.cpp.o
@@ -442,7 +442,7 @@ work.o: work.cpp.o
 
 # target to build an object file
 work.cpp.o:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/work.cpp.o
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/work.cpp.o
 .PHONY : work.cpp.o
 
 work.i: work.cpp.i
@@ -451,7 +451,7 @@ work.i: work.cpp.i
 
 # target to preprocess a source file
 work.cpp.i:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/work.cpp.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/work.cpp.i
 .PHONY : work.cpp.i
 
 work.s: work.cpp.s
@@ -460,7 +460,7 @@ work.s: work.cpp.s
 
 # target to generate assembly for a file
 work.cpp.s:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/work.cpp.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(MAKE) -f btcb/lib/CMakeFiles/btcb_lib.dir/build.make btcb/lib/CMakeFiles/btcb_lib.dir/work.cpp.s
 .PHONY : work.cpp.s
 
 # Help Target
@@ -519,6 +519,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

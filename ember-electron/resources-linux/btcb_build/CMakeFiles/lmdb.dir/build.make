@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb
+CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build
+CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lmdb.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/lmdb.dir/progress.make
 include CMakeFiles/lmdb.dir/flags.make
 
 CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o: CMakeFiles/lmdb.dir/flags.make
-CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/mdb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/mdb.c
+CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/mdb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/mdb.c
 
 CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/mdb.c > CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/mdb.c > CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.i
 
 CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/mdb.c -o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/mdb.c -o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.s
 
 CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o.requires:
 
@@ -82,17 +82,17 @@ CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o.provides.build: CMakeFiles/lm
 
 
 CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o: CMakeFiles/lmdb.dir/flags.make
-CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/midl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/midl.c
+CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/midl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/midl.c
 
 CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/midl.c > CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/midl.c > CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.i
 
 CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/lmdb/libraries/liblmdb/midl.c -o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/lmdb/libraries/liblmdb/midl.c -o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.s
 
 CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o.requires:
 
@@ -117,7 +117,7 @@ liblmdb.a: CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o
 liblmdb.a: CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o
 liblmdb.a: CMakeFiles/lmdb.dir/build.make
 liblmdb.a: CMakeFiles/lmdb.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblmdb.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblmdb.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/lmdb.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lmdb.dir/link.txt --verbose=$(VERBOSE)
 
@@ -136,6 +136,6 @@ CMakeFiles/lmdb.dir/clean:
 .PHONY : CMakeFiles/lmdb.dir/clean
 
 CMakeFiles/lmdb.dir/depend:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/lmdb.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/lmdb.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lmdb.dir/depend
 

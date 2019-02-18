@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb
+CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build
+CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build
 
 # Include any dependencies generated for this target.
 include miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/depend.make
@@ -58,17 +58,17 @@ include miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/progress.make
 include miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/testigddescparse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/testigddescparse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/testigddescparse.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/testigddescparse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/testigddescparse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/testigddescparse.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/testigddescparse.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/testigddescparse.c > CMakeFiles/testigddescparse.dir/testigddescparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/testigddescparse.c > CMakeFiles/testigddescparse.dir/testigddescparse.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/testigddescparse.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/testigddescparse.c -o CMakeFiles/testigddescparse.dir/testigddescparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/testigddescparse.c -o CMakeFiles/testigddescparse.dir/testigddescparse.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o.requires:
 
@@ -82,17 +82,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/testigddescparse.c.o.provides
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/igd_desc_parse.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.c > CMakeFiles/testigddescparse.dir/igd_desc_parse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.c > CMakeFiles/testigddescparse.dir/igd_desc_parse.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/igd_desc_parse.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/igd_desc_parse.c -o CMakeFiles/testigddescparse.dir/igd_desc_parse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/igd_desc_parse.c -o CMakeFiles/testigddescparse.dir/igd_desc_parse.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o.requires:
 
@@ -106,17 +106,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/igd_desc_parse.c.o.provides.b
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minixml.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/minixml.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minixml.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minixml.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/minixml.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minixml.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/minixml.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minixml.c > CMakeFiles/testigddescparse.dir/minixml.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minixml.c > CMakeFiles/testigddescparse.dir/minixml.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/minixml.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minixml.c -o CMakeFiles/testigddescparse.dir/minixml.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minixml.c -o CMakeFiles/testigddescparse.dir/minixml.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o.requires:
 
@@ -130,17 +130,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minixml.c.o.provides.build: m
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/miniupnpc.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/miniupnpc.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/miniupnpc.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc.c > CMakeFiles/testigddescparse.dir/miniupnpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc.c > CMakeFiles/testigddescparse.dir/miniupnpc.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/miniupnpc.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniupnpc.c -o CMakeFiles/testigddescparse.dir/miniupnpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniupnpc.c -o CMakeFiles/testigddescparse.dir/miniupnpc.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o.requires:
 
@@ -154,17 +154,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniupnpc.c.o.provides.build:
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniwget.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/miniwget.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniwget.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniwget.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/miniwget.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniwget.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/miniwget.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniwget.c > CMakeFiles/testigddescparse.dir/miniwget.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniwget.c > CMakeFiles/testigddescparse.dir/miniwget.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/miniwget.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/miniwget.c -o CMakeFiles/testigddescparse.dir/miniwget.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/miniwget.c -o CMakeFiles/testigddescparse.dir/miniwget.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o.requires:
 
@@ -178,17 +178,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/miniwget.c.o.provides.build: 
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minissdpc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/minissdpc.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minissdpc.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minissdpc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/minissdpc.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minissdpc.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/minissdpc.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minissdpc.c > CMakeFiles/testigddescparse.dir/minissdpc.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minissdpc.c > CMakeFiles/testigddescparse.dir/minissdpc.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/minissdpc.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minissdpc.c -o CMakeFiles/testigddescparse.dir/minissdpc.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minissdpc.c -o CMakeFiles/testigddescparse.dir/minissdpc.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o.requires:
 
@@ -202,17 +202,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minissdpc.c.o.provides.build:
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpcommands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/upnpcommands.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpcommands.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpcommands.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/upnpcommands.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpcommands.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/upnpcommands.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpcommands.c > CMakeFiles/testigddescparse.dir/upnpcommands.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpcommands.c > CMakeFiles/testigddescparse.dir/upnpcommands.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/upnpcommands.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpcommands.c -o CMakeFiles/testigddescparse.dir/upnpcommands.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpcommands.c -o CMakeFiles/testigddescparse.dir/upnpcommands.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o.requires:
 
@@ -226,17 +226,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpcommands.c.o.provides.bui
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpreplyparse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpreplyparse.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpreplyparse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpreplyparse.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/upnpreplyparse.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpreplyparse.c > CMakeFiles/testigddescparse.dir/upnpreplyparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpreplyparse.c > CMakeFiles/testigddescparse.dir/upnpreplyparse.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/upnpreplyparse.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/upnpreplyparse.c -o CMakeFiles/testigddescparse.dir/upnpreplyparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/upnpreplyparse.c -o CMakeFiles/testigddescparse.dir/upnpreplyparse.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o.requires:
 
@@ -250,17 +250,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/upnpreplyparse.c.o.provides.b
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minisoap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/minisoap.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minisoap.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minisoap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/minisoap.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minisoap.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/minisoap.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minisoap.c > CMakeFiles/testigddescparse.dir/minisoap.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minisoap.c > CMakeFiles/testigddescparse.dir/minisoap.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/minisoap.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/minisoap.c -o CMakeFiles/testigddescparse.dir/minisoap.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/minisoap.c -o CMakeFiles/testigddescparse.dir/minisoap.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o.requires:
 
@@ -274,17 +274,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/minisoap.c.o.provides.build: 
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/connecthostport.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/connecthostport.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/connecthostport.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/connecthostport.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/connecthostport.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/connecthostport.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/connecthostport.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/connecthostport.c > CMakeFiles/testigddescparse.dir/connecthostport.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/connecthostport.c > CMakeFiles/testigddescparse.dir/connecthostport.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/connecthostport.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/connecthostport.c -o CMakeFiles/testigddescparse.dir/connecthostport.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/connecthostport.c -o CMakeFiles/testigddescparse.dir/connecthostport.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o.requires:
 
@@ -298,17 +298,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/connecthostport.c.o.provides.
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/portlistingparse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/portlistingparse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/portlistingparse.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/portlistingparse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/portlistingparse.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/portlistingparse.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/portlistingparse.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/portlistingparse.c > CMakeFiles/testigddescparse.dir/portlistingparse.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/portlistingparse.c > CMakeFiles/testigddescparse.dir/portlistingparse.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/portlistingparse.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/portlistingparse.c -o CMakeFiles/testigddescparse.dir/portlistingparse.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/portlistingparse.c -o CMakeFiles/testigddescparse.dir/portlistingparse.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o.requires:
 
@@ -322,17 +322,17 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlistingparse.c.o.provides
 
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/flags.make
-miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/receivedata.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/receivedata.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/receivedata.c
+miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/receivedata.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testigddescparse.dir/receivedata.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/receivedata.c
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testigddescparse.dir/receivedata.c.i"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/receivedata.c > CMakeFiles/testigddescparse.dir/receivedata.c.i
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/receivedata.c > CMakeFiles/testigddescparse.dir/receivedata.c.i
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testigddescparse.dir/receivedata.c.s"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc/receivedata.c -o CMakeFiles/testigddescparse.dir/receivedata.c.s
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc/receivedata.c -o CMakeFiles/testigddescparse.dir/receivedata.c.s
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o.requires:
 
@@ -377,8 +377,8 @@ testigddescparse: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/portlisting
 testigddescparse: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/receivedata.c.o
 testigddescparse: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build.make
 testigddescparse: miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable ../../testigddescparse"
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testigddescparse.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable ../../testigddescparse"
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testigddescparse.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/build: testigddescparse
@@ -401,10 +401,10 @@ miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/requires: miniupnp/miniupnpc/
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/requires
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/clean:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc && $(CMAKE_COMMAND) -P CMakeFiles/testigddescparse.dir/cmake_clean.cmake
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc && $(CMAKE_COMMAND) -P CMakeFiles/testigddescparse.dir/cmake_clean.cmake
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/clean
 
 miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/depend:
-	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/miniupnp/miniupnpc /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/DependInfo.cmake --color=$(COLOR)
+	cd /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/miniupnp/miniupnpc /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : miniupnp/miniupnpc/CMakeFiles/testigddescparse.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb
+CMAKE_SOURCE_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build
+CMAKE_BINARY_DIR = /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -92,24 +92,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -146,11 +135,22 @@ package/fast: package
 
 .PHONY : package/fast
 
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -179,32 +179,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named argon2
-
-# Build rule for target.
-argon2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 argon2
-.PHONY : argon2
-
-# fast build rule for target.
-argon2/fast:
-	$(MAKE) -f CMakeFiles/argon2.dir/build.make CMakeFiles/argon2.dir/build
-.PHONY : argon2/fast
-
-#=============================================================================
-# Target rules for targets named cryptopp
-
-# Build rule for target.
-cryptopp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cryptopp
-.PHONY : cryptopp
-
-# fast build rule for target.
-cryptopp/fast:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/build
-.PHONY : cryptopp/fast
-
-#=============================================================================
 # Target rules for targets named xxhash
 
 # Build rule for target.
@@ -216,6 +190,19 @@ xxhash: cmake_check_build_system
 xxhash/fast:
 	$(MAKE) -f CMakeFiles/xxhash.dir/build.make CMakeFiles/xxhash.dir/build
 .PHONY : xxhash/fast
+
+#=============================================================================
+# Target rules for targets named argon2
+
+# Build rule for target.
+argon2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 argon2
+.PHONY : argon2
+
+# fast build rule for target.
+argon2/fast:
+	$(MAKE) -f CMakeFiles/argon2.dir/build.make CMakeFiles/argon2.dir/build
+.PHONY : argon2/fast
 
 #=============================================================================
 # Target rules for targets named lmdb
@@ -348,6 +335,32 @@ testigddescparse/fast:
 .PHONY : testigddescparse/fast
 
 #=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) -f cryptopp/CMakeFiles/static.dir/build.make cryptopp/CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+#=============================================================================
+# Target rules for targets named cryptopp-static
+
+# Build rule for target.
+cryptopp-static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cryptopp-static
+.PHONY : cryptopp-static
+
+# fast build rule for target.
+cryptopp-static/fast:
+	$(MAKE) -f cryptopp/CMakeFiles/cryptopp-static.dir/build.make cryptopp/CMakeFiles/cryptopp-static.dir/build
+.PHONY : cryptopp-static/fast
+
+#=============================================================================
 # Target rules for targets named secure
 
 # Build rule for target.
@@ -425,978 +438,6 @@ blake2/blake2b.s: blake2/blake2b.c.s
 blake2/blake2b.c.s:
 	$(MAKE) -f CMakeFiles/blake2.dir/build.make CMakeFiles/blake2.dir/blake2/blake2b.c.s
 .PHONY : blake2/blake2b.c.s
-
-cryptopp/algparam.o: cryptopp/algparam.cpp.o
-
-.PHONY : cryptopp/algparam.o
-
-# target to build an object file
-cryptopp/algparam.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/algparam.cpp.o
-.PHONY : cryptopp/algparam.cpp.o
-
-cryptopp/algparam.i: cryptopp/algparam.cpp.i
-
-.PHONY : cryptopp/algparam.i
-
-# target to preprocess a source file
-cryptopp/algparam.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/algparam.cpp.i
-.PHONY : cryptopp/algparam.cpp.i
-
-cryptopp/algparam.s: cryptopp/algparam.cpp.s
-
-.PHONY : cryptopp/algparam.s
-
-# target to generate assembly for a file
-cryptopp/algparam.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/algparam.cpp.s
-.PHONY : cryptopp/algparam.cpp.s
-
-cryptopp/asn.o: cryptopp/asn.cpp.o
-
-.PHONY : cryptopp/asn.o
-
-# target to build an object file
-cryptopp/asn.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/asn.cpp.o
-.PHONY : cryptopp/asn.cpp.o
-
-cryptopp/asn.i: cryptopp/asn.cpp.i
-
-.PHONY : cryptopp/asn.i
-
-# target to preprocess a source file
-cryptopp/asn.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/asn.cpp.i
-.PHONY : cryptopp/asn.cpp.i
-
-cryptopp/asn.s: cryptopp/asn.cpp.s
-
-.PHONY : cryptopp/asn.s
-
-# target to generate assembly for a file
-cryptopp/asn.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/asn.cpp.s
-.PHONY : cryptopp/asn.cpp.s
-
-cryptopp/basecode.o: cryptopp/basecode.cpp.o
-
-.PHONY : cryptopp/basecode.o
-
-# target to build an object file
-cryptopp/basecode.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/basecode.cpp.o
-.PHONY : cryptopp/basecode.cpp.o
-
-cryptopp/basecode.i: cryptopp/basecode.cpp.i
-
-.PHONY : cryptopp/basecode.i
-
-# target to preprocess a source file
-cryptopp/basecode.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/basecode.cpp.i
-.PHONY : cryptopp/basecode.cpp.i
-
-cryptopp/basecode.s: cryptopp/basecode.cpp.s
-
-.PHONY : cryptopp/basecode.s
-
-# target to generate assembly for a file
-cryptopp/basecode.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/basecode.cpp.s
-.PHONY : cryptopp/basecode.cpp.s
-
-cryptopp/cpu.o: cryptopp/cpu.cpp.o
-
-.PHONY : cryptopp/cpu.o
-
-# target to build an object file
-cryptopp/cpu.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/cpu.cpp.o
-.PHONY : cryptopp/cpu.cpp.o
-
-cryptopp/cpu.i: cryptopp/cpu.cpp.i
-
-.PHONY : cryptopp/cpu.i
-
-# target to preprocess a source file
-cryptopp/cpu.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/cpu.cpp.i
-.PHONY : cryptopp/cpu.cpp.i
-
-cryptopp/cpu.s: cryptopp/cpu.cpp.s
-
-.PHONY : cryptopp/cpu.s
-
-# target to generate assembly for a file
-cryptopp/cpu.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/cpu.cpp.s
-.PHONY : cryptopp/cpu.cpp.s
-
-cryptopp/cryptlib.o: cryptopp/cryptlib.cpp.o
-
-.PHONY : cryptopp/cryptlib.o
-
-# target to build an object file
-cryptopp/cryptlib.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/cryptlib.cpp.o
-.PHONY : cryptopp/cryptlib.cpp.o
-
-cryptopp/cryptlib.i: cryptopp/cryptlib.cpp.i
-
-.PHONY : cryptopp/cryptlib.i
-
-# target to preprocess a source file
-cryptopp/cryptlib.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/cryptlib.cpp.i
-.PHONY : cryptopp/cryptlib.cpp.i
-
-cryptopp/cryptlib.s: cryptopp/cryptlib.cpp.s
-
-.PHONY : cryptopp/cryptlib.s
-
-# target to generate assembly for a file
-cryptopp/cryptlib.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/cryptlib.cpp.s
-.PHONY : cryptopp/cryptlib.cpp.s
-
-cryptopp/default.o: cryptopp/default.cpp.o
-
-.PHONY : cryptopp/default.o
-
-# target to build an object file
-cryptopp/default.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/default.cpp.o
-.PHONY : cryptopp/default.cpp.o
-
-cryptopp/default.i: cryptopp/default.cpp.i
-
-.PHONY : cryptopp/default.i
-
-# target to preprocess a source file
-cryptopp/default.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/default.cpp.i
-.PHONY : cryptopp/default.cpp.i
-
-cryptopp/default.s: cryptopp/default.cpp.s
-
-.PHONY : cryptopp/default.s
-
-# target to generate assembly for a file
-cryptopp/default.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/default.cpp.s
-.PHONY : cryptopp/default.cpp.s
-
-cryptopp/des.o: cryptopp/des.cpp.o
-
-.PHONY : cryptopp/des.o
-
-# target to build an object file
-cryptopp/des.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/des.cpp.o
-.PHONY : cryptopp/des.cpp.o
-
-cryptopp/des.i: cryptopp/des.cpp.i
-
-.PHONY : cryptopp/des.i
-
-# target to preprocess a source file
-cryptopp/des.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/des.cpp.i
-.PHONY : cryptopp/des.cpp.i
-
-cryptopp/des.s: cryptopp/des.cpp.s
-
-.PHONY : cryptopp/des.s
-
-# target to generate assembly for a file
-cryptopp/des.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/des.cpp.s
-.PHONY : cryptopp/des.cpp.s
-
-cryptopp/dessp.o: cryptopp/dessp.cpp.o
-
-.PHONY : cryptopp/dessp.o
-
-# target to build an object file
-cryptopp/dessp.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/dessp.cpp.o
-.PHONY : cryptopp/dessp.cpp.o
-
-cryptopp/dessp.i: cryptopp/dessp.cpp.i
-
-.PHONY : cryptopp/dessp.i
-
-# target to preprocess a source file
-cryptopp/dessp.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/dessp.cpp.i
-.PHONY : cryptopp/dessp.cpp.i
-
-cryptopp/dessp.s: cryptopp/dessp.cpp.s
-
-.PHONY : cryptopp/dessp.s
-
-# target to generate assembly for a file
-cryptopp/dessp.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/dessp.cpp.s
-.PHONY : cryptopp/dessp.cpp.s
-
-cryptopp/dll.o: cryptopp/dll.cpp.o
-
-.PHONY : cryptopp/dll.o
-
-# target to build an object file
-cryptopp/dll.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/dll.cpp.o
-.PHONY : cryptopp/dll.cpp.o
-
-cryptopp/dll.i: cryptopp/dll.cpp.i
-
-.PHONY : cryptopp/dll.i
-
-# target to preprocess a source file
-cryptopp/dll.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/dll.cpp.i
-.PHONY : cryptopp/dll.cpp.i
-
-cryptopp/dll.s: cryptopp/dll.cpp.s
-
-.PHONY : cryptopp/dll.s
-
-# target to generate assembly for a file
-cryptopp/dll.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/dll.cpp.s
-.PHONY : cryptopp/dll.cpp.s
-
-cryptopp/ec2n.o: cryptopp/ec2n.cpp.o
-
-.PHONY : cryptopp/ec2n.o
-
-# target to build an object file
-cryptopp/ec2n.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/ec2n.cpp.o
-.PHONY : cryptopp/ec2n.cpp.o
-
-cryptopp/ec2n.i: cryptopp/ec2n.cpp.i
-
-.PHONY : cryptopp/ec2n.i
-
-# target to preprocess a source file
-cryptopp/ec2n.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/ec2n.cpp.i
-.PHONY : cryptopp/ec2n.cpp.i
-
-cryptopp/ec2n.s: cryptopp/ec2n.cpp.s
-
-.PHONY : cryptopp/ec2n.s
-
-# target to generate assembly for a file
-cryptopp/ec2n.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/ec2n.cpp.s
-.PHONY : cryptopp/ec2n.cpp.s
-
-cryptopp/ecp.o: cryptopp/ecp.cpp.o
-
-.PHONY : cryptopp/ecp.o
-
-# target to build an object file
-cryptopp/ecp.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/ecp.cpp.o
-.PHONY : cryptopp/ecp.cpp.o
-
-cryptopp/ecp.i: cryptopp/ecp.cpp.i
-
-.PHONY : cryptopp/ecp.i
-
-# target to preprocess a source file
-cryptopp/ecp.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/ecp.cpp.i
-.PHONY : cryptopp/ecp.cpp.i
-
-cryptopp/ecp.s: cryptopp/ecp.cpp.s
-
-.PHONY : cryptopp/ecp.s
-
-# target to generate assembly for a file
-cryptopp/ecp.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/ecp.cpp.s
-.PHONY : cryptopp/ecp.cpp.s
-
-cryptopp/filters.o: cryptopp/filters.cpp.o
-
-.PHONY : cryptopp/filters.o
-
-# target to build an object file
-cryptopp/filters.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/filters.cpp.o
-.PHONY : cryptopp/filters.cpp.o
-
-cryptopp/filters.i: cryptopp/filters.cpp.i
-
-.PHONY : cryptopp/filters.i
-
-# target to preprocess a source file
-cryptopp/filters.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/filters.cpp.i
-.PHONY : cryptopp/filters.cpp.i
-
-cryptopp/filters.s: cryptopp/filters.cpp.s
-
-.PHONY : cryptopp/filters.s
-
-# target to generate assembly for a file
-cryptopp/filters.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/filters.cpp.s
-.PHONY : cryptopp/filters.cpp.s
-
-cryptopp/fips140.o: cryptopp/fips140.cpp.o
-
-.PHONY : cryptopp/fips140.o
-
-# target to build an object file
-cryptopp/fips140.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/fips140.cpp.o
-.PHONY : cryptopp/fips140.cpp.o
-
-cryptopp/fips140.i: cryptopp/fips140.cpp.i
-
-.PHONY : cryptopp/fips140.i
-
-# target to preprocess a source file
-cryptopp/fips140.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/fips140.cpp.i
-.PHONY : cryptopp/fips140.cpp.i
-
-cryptopp/fips140.s: cryptopp/fips140.cpp.s
-
-.PHONY : cryptopp/fips140.s
-
-# target to generate assembly for a file
-cryptopp/fips140.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/fips140.cpp.s
-.PHONY : cryptopp/fips140.cpp.s
-
-cryptopp/gcm.o: cryptopp/gcm.cpp.o
-
-.PHONY : cryptopp/gcm.o
-
-# target to build an object file
-cryptopp/gcm.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gcm.cpp.o
-.PHONY : cryptopp/gcm.cpp.o
-
-cryptopp/gcm.i: cryptopp/gcm.cpp.i
-
-.PHONY : cryptopp/gcm.i
-
-# target to preprocess a source file
-cryptopp/gcm.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gcm.cpp.i
-.PHONY : cryptopp/gcm.cpp.i
-
-cryptopp/gcm.s: cryptopp/gcm.cpp.s
-
-.PHONY : cryptopp/gcm.s
-
-# target to generate assembly for a file
-cryptopp/gcm.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gcm.cpp.s
-.PHONY : cryptopp/gcm.cpp.s
-
-cryptopp/gf2n.o: cryptopp/gf2n.cpp.o
-
-.PHONY : cryptopp/gf2n.o
-
-# target to build an object file
-cryptopp/gf2n.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gf2n.cpp.o
-.PHONY : cryptopp/gf2n.cpp.o
-
-cryptopp/gf2n.i: cryptopp/gf2n.cpp.i
-
-.PHONY : cryptopp/gf2n.i
-
-# target to preprocess a source file
-cryptopp/gf2n.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gf2n.cpp.i
-.PHONY : cryptopp/gf2n.cpp.i
-
-cryptopp/gf2n.s: cryptopp/gf2n.cpp.s
-
-.PHONY : cryptopp/gf2n.s
-
-# target to generate assembly for a file
-cryptopp/gf2n.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gf2n.cpp.s
-.PHONY : cryptopp/gf2n.cpp.s
-
-cryptopp/gfpcrypt.o: cryptopp/gfpcrypt.cpp.o
-
-.PHONY : cryptopp/gfpcrypt.o
-
-# target to build an object file
-cryptopp/gfpcrypt.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gfpcrypt.cpp.o
-.PHONY : cryptopp/gfpcrypt.cpp.o
-
-cryptopp/gfpcrypt.i: cryptopp/gfpcrypt.cpp.i
-
-.PHONY : cryptopp/gfpcrypt.i
-
-# target to preprocess a source file
-cryptopp/gfpcrypt.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gfpcrypt.cpp.i
-.PHONY : cryptopp/gfpcrypt.cpp.i
-
-cryptopp/gfpcrypt.s: cryptopp/gfpcrypt.cpp.s
-
-.PHONY : cryptopp/gfpcrypt.s
-
-# target to generate assembly for a file
-cryptopp/gfpcrypt.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/gfpcrypt.cpp.s
-.PHONY : cryptopp/gfpcrypt.cpp.s
-
-cryptopp/hex.o: cryptopp/hex.cpp.o
-
-.PHONY : cryptopp/hex.o
-
-# target to build an object file
-cryptopp/hex.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hex.cpp.o
-.PHONY : cryptopp/hex.cpp.o
-
-cryptopp/hex.i: cryptopp/hex.cpp.i
-
-.PHONY : cryptopp/hex.i
-
-# target to preprocess a source file
-cryptopp/hex.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hex.cpp.i
-.PHONY : cryptopp/hex.cpp.i
-
-cryptopp/hex.s: cryptopp/hex.cpp.s
-
-.PHONY : cryptopp/hex.s
-
-# target to generate assembly for a file
-cryptopp/hex.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hex.cpp.s
-.PHONY : cryptopp/hex.cpp.s
-
-cryptopp/hmac.o: cryptopp/hmac.cpp.o
-
-.PHONY : cryptopp/hmac.o
-
-# target to build an object file
-cryptopp/hmac.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hmac.cpp.o
-.PHONY : cryptopp/hmac.cpp.o
-
-cryptopp/hmac.i: cryptopp/hmac.cpp.i
-
-.PHONY : cryptopp/hmac.i
-
-# target to preprocess a source file
-cryptopp/hmac.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hmac.cpp.i
-.PHONY : cryptopp/hmac.cpp.i
-
-cryptopp/hmac.s: cryptopp/hmac.cpp.s
-
-.PHONY : cryptopp/hmac.s
-
-# target to generate assembly for a file
-cryptopp/hmac.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hmac.cpp.s
-.PHONY : cryptopp/hmac.cpp.s
-
-cryptopp/hrtimer.o: cryptopp/hrtimer.cpp.o
-
-.PHONY : cryptopp/hrtimer.o
-
-# target to build an object file
-cryptopp/hrtimer.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hrtimer.cpp.o
-.PHONY : cryptopp/hrtimer.cpp.o
-
-cryptopp/hrtimer.i: cryptopp/hrtimer.cpp.i
-
-.PHONY : cryptopp/hrtimer.i
-
-# target to preprocess a source file
-cryptopp/hrtimer.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hrtimer.cpp.i
-.PHONY : cryptopp/hrtimer.cpp.i
-
-cryptopp/hrtimer.s: cryptopp/hrtimer.cpp.s
-
-.PHONY : cryptopp/hrtimer.s
-
-# target to generate assembly for a file
-cryptopp/hrtimer.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/hrtimer.cpp.s
-.PHONY : cryptopp/hrtimer.cpp.s
-
-cryptopp/integer.o: cryptopp/integer.cpp.o
-
-.PHONY : cryptopp/integer.o
-
-# target to build an object file
-cryptopp/integer.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/integer.cpp.o
-.PHONY : cryptopp/integer.cpp.o
-
-cryptopp/integer.i: cryptopp/integer.cpp.i
-
-.PHONY : cryptopp/integer.i
-
-# target to preprocess a source file
-cryptopp/integer.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/integer.cpp.i
-.PHONY : cryptopp/integer.cpp.i
-
-cryptopp/integer.s: cryptopp/integer.cpp.s
-
-.PHONY : cryptopp/integer.s
-
-# target to generate assembly for a file
-cryptopp/integer.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/integer.cpp.s
-.PHONY : cryptopp/integer.cpp.s
-
-cryptopp/iterhash.o: cryptopp/iterhash.cpp.o
-
-.PHONY : cryptopp/iterhash.o
-
-# target to build an object file
-cryptopp/iterhash.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/iterhash.cpp.o
-.PHONY : cryptopp/iterhash.cpp.o
-
-cryptopp/iterhash.i: cryptopp/iterhash.cpp.i
-
-.PHONY : cryptopp/iterhash.i
-
-# target to preprocess a source file
-cryptopp/iterhash.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/iterhash.cpp.i
-.PHONY : cryptopp/iterhash.cpp.i
-
-cryptopp/iterhash.s: cryptopp/iterhash.cpp.s
-
-.PHONY : cryptopp/iterhash.s
-
-# target to generate assembly for a file
-cryptopp/iterhash.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/iterhash.cpp.s
-.PHONY : cryptopp/iterhash.cpp.s
-
-cryptopp/misc.o: cryptopp/misc.cpp.o
-
-.PHONY : cryptopp/misc.o
-
-# target to build an object file
-cryptopp/misc.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/misc.cpp.o
-.PHONY : cryptopp/misc.cpp.o
-
-cryptopp/misc.i: cryptopp/misc.cpp.i
-
-.PHONY : cryptopp/misc.i
-
-# target to preprocess a source file
-cryptopp/misc.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/misc.cpp.i
-.PHONY : cryptopp/misc.cpp.i
-
-cryptopp/misc.s: cryptopp/misc.cpp.s
-
-.PHONY : cryptopp/misc.s
-
-# target to generate assembly for a file
-cryptopp/misc.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/misc.cpp.s
-.PHONY : cryptopp/misc.cpp.s
-
-cryptopp/modes.o: cryptopp/modes.cpp.o
-
-.PHONY : cryptopp/modes.o
-
-# target to build an object file
-cryptopp/modes.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/modes.cpp.o
-.PHONY : cryptopp/modes.cpp.o
-
-cryptopp/modes.i: cryptopp/modes.cpp.i
-
-.PHONY : cryptopp/modes.i
-
-# target to preprocess a source file
-cryptopp/modes.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/modes.cpp.i
-.PHONY : cryptopp/modes.cpp.i
-
-cryptopp/modes.s: cryptopp/modes.cpp.s
-
-.PHONY : cryptopp/modes.s
-
-# target to generate assembly for a file
-cryptopp/modes.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/modes.cpp.s
-.PHONY : cryptopp/modes.cpp.s
-
-cryptopp/mqueue.o: cryptopp/mqueue.cpp.o
-
-.PHONY : cryptopp/mqueue.o
-
-# target to build an object file
-cryptopp/mqueue.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/mqueue.cpp.o
-.PHONY : cryptopp/mqueue.cpp.o
-
-cryptopp/mqueue.i: cryptopp/mqueue.cpp.i
-
-.PHONY : cryptopp/mqueue.i
-
-# target to preprocess a source file
-cryptopp/mqueue.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/mqueue.cpp.i
-.PHONY : cryptopp/mqueue.cpp.i
-
-cryptopp/mqueue.s: cryptopp/mqueue.cpp.s
-
-.PHONY : cryptopp/mqueue.s
-
-# target to generate assembly for a file
-cryptopp/mqueue.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/mqueue.cpp.s
-.PHONY : cryptopp/mqueue.cpp.s
-
-cryptopp/nbtheory.o: cryptopp/nbtheory.cpp.o
-
-.PHONY : cryptopp/nbtheory.o
-
-# target to build an object file
-cryptopp/nbtheory.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/nbtheory.cpp.o
-.PHONY : cryptopp/nbtheory.cpp.o
-
-cryptopp/nbtheory.i: cryptopp/nbtheory.cpp.i
-
-.PHONY : cryptopp/nbtheory.i
-
-# target to preprocess a source file
-cryptopp/nbtheory.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/nbtheory.cpp.i
-.PHONY : cryptopp/nbtheory.cpp.i
-
-cryptopp/nbtheory.s: cryptopp/nbtheory.cpp.s
-
-.PHONY : cryptopp/nbtheory.s
-
-# target to generate assembly for a file
-cryptopp/nbtheory.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/nbtheory.cpp.s
-.PHONY : cryptopp/nbtheory.cpp.s
-
-cryptopp/oaep.o: cryptopp/oaep.cpp.o
-
-.PHONY : cryptopp/oaep.o
-
-# target to build an object file
-cryptopp/oaep.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/oaep.cpp.o
-.PHONY : cryptopp/oaep.cpp.o
-
-cryptopp/oaep.i: cryptopp/oaep.cpp.i
-
-.PHONY : cryptopp/oaep.i
-
-# target to preprocess a source file
-cryptopp/oaep.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/oaep.cpp.i
-.PHONY : cryptopp/oaep.cpp.i
-
-cryptopp/oaep.s: cryptopp/oaep.cpp.s
-
-.PHONY : cryptopp/oaep.s
-
-# target to generate assembly for a file
-cryptopp/oaep.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/oaep.cpp.s
-.PHONY : cryptopp/oaep.cpp.s
-
-cryptopp/osrng.o: cryptopp/osrng.cpp.o
-
-.PHONY : cryptopp/osrng.o
-
-# target to build an object file
-cryptopp/osrng.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/osrng.cpp.o
-.PHONY : cryptopp/osrng.cpp.o
-
-cryptopp/osrng.i: cryptopp/osrng.cpp.i
-
-.PHONY : cryptopp/osrng.i
-
-# target to preprocess a source file
-cryptopp/osrng.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/osrng.cpp.i
-.PHONY : cryptopp/osrng.cpp.i
-
-cryptopp/osrng.s: cryptopp/osrng.cpp.s
-
-.PHONY : cryptopp/osrng.s
-
-# target to generate assembly for a file
-cryptopp/osrng.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/osrng.cpp.s
-.PHONY : cryptopp/osrng.cpp.s
-
-cryptopp/pubkey.o: cryptopp/pubkey.cpp.o
-
-.PHONY : cryptopp/pubkey.o
-
-# target to build an object file
-cryptopp/pubkey.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/pubkey.cpp.o
-.PHONY : cryptopp/pubkey.cpp.o
-
-cryptopp/pubkey.i: cryptopp/pubkey.cpp.i
-
-.PHONY : cryptopp/pubkey.i
-
-# target to preprocess a source file
-cryptopp/pubkey.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/pubkey.cpp.i
-.PHONY : cryptopp/pubkey.cpp.i
-
-cryptopp/pubkey.s: cryptopp/pubkey.cpp.s
-
-.PHONY : cryptopp/pubkey.s
-
-# target to generate assembly for a file
-cryptopp/pubkey.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/pubkey.cpp.s
-.PHONY : cryptopp/pubkey.cpp.s
-
-cryptopp/queue.o: cryptopp/queue.cpp.o
-
-.PHONY : cryptopp/queue.o
-
-# target to build an object file
-cryptopp/queue.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/queue.cpp.o
-.PHONY : cryptopp/queue.cpp.o
-
-cryptopp/queue.i: cryptopp/queue.cpp.i
-
-.PHONY : cryptopp/queue.i
-
-# target to preprocess a source file
-cryptopp/queue.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/queue.cpp.i
-.PHONY : cryptopp/queue.cpp.i
-
-cryptopp/queue.s: cryptopp/queue.cpp.s
-
-.PHONY : cryptopp/queue.s
-
-# target to generate assembly for a file
-cryptopp/queue.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/queue.cpp.s
-.PHONY : cryptopp/queue.cpp.s
-
-cryptopp/randpool.o: cryptopp/randpool.cpp.o
-
-.PHONY : cryptopp/randpool.o
-
-# target to build an object file
-cryptopp/randpool.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/randpool.cpp.o
-.PHONY : cryptopp/randpool.cpp.o
-
-cryptopp/randpool.i: cryptopp/randpool.cpp.i
-
-.PHONY : cryptopp/randpool.i
-
-# target to preprocess a source file
-cryptopp/randpool.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/randpool.cpp.i
-.PHONY : cryptopp/randpool.cpp.i
-
-cryptopp/randpool.s: cryptopp/randpool.cpp.s
-
-.PHONY : cryptopp/randpool.s
-
-# target to generate assembly for a file
-cryptopp/randpool.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/randpool.cpp.s
-.PHONY : cryptopp/randpool.cpp.s
-
-cryptopp/rdtables.o: cryptopp/rdtables.cpp.o
-
-.PHONY : cryptopp/rdtables.o
-
-# target to build an object file
-cryptopp/rdtables.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rdtables.cpp.o
-.PHONY : cryptopp/rdtables.cpp.o
-
-cryptopp/rdtables.i: cryptopp/rdtables.cpp.i
-
-.PHONY : cryptopp/rdtables.i
-
-# target to preprocess a source file
-cryptopp/rdtables.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rdtables.cpp.i
-.PHONY : cryptopp/rdtables.cpp.i
-
-cryptopp/rdtables.s: cryptopp/rdtables.cpp.s
-
-.PHONY : cryptopp/rdtables.s
-
-# target to generate assembly for a file
-cryptopp/rdtables.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rdtables.cpp.s
-.PHONY : cryptopp/rdtables.cpp.s
-
-cryptopp/rijndael.o: cryptopp/rijndael.cpp.o
-
-.PHONY : cryptopp/rijndael.o
-
-# target to build an object file
-cryptopp/rijndael.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rijndael.cpp.o
-.PHONY : cryptopp/rijndael.cpp.o
-
-cryptopp/rijndael.i: cryptopp/rijndael.cpp.i
-
-.PHONY : cryptopp/rijndael.i
-
-# target to preprocess a source file
-cryptopp/rijndael.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rijndael.cpp.i
-.PHONY : cryptopp/rijndael.cpp.i
-
-cryptopp/rijndael.s: cryptopp/rijndael.cpp.s
-
-.PHONY : cryptopp/rijndael.s
-
-# target to generate assembly for a file
-cryptopp/rijndael.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rijndael.cpp.s
-.PHONY : cryptopp/rijndael.cpp.s
-
-cryptopp/rng.o: cryptopp/rng.cpp.o
-
-.PHONY : cryptopp/rng.o
-
-# target to build an object file
-cryptopp/rng.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rng.cpp.o
-.PHONY : cryptopp/rng.cpp.o
-
-cryptopp/rng.i: cryptopp/rng.cpp.i
-
-.PHONY : cryptopp/rng.i
-
-# target to preprocess a source file
-cryptopp/rng.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rng.cpp.i
-.PHONY : cryptopp/rng.cpp.i
-
-cryptopp/rng.s: cryptopp/rng.cpp.s
-
-.PHONY : cryptopp/rng.s
-
-# target to generate assembly for a file
-cryptopp/rng.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/rng.cpp.s
-.PHONY : cryptopp/rng.cpp.s
-
-cryptopp/sha.o: cryptopp/sha.cpp.o
-
-.PHONY : cryptopp/sha.o
-
-# target to build an object file
-cryptopp/sha.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/sha.cpp.o
-.PHONY : cryptopp/sha.cpp.o
-
-cryptopp/sha.i: cryptopp/sha.cpp.i
-
-.PHONY : cryptopp/sha.i
-
-# target to preprocess a source file
-cryptopp/sha.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/sha.cpp.i
-.PHONY : cryptopp/sha.cpp.i
-
-cryptopp/sha.s: cryptopp/sha.cpp.s
-
-.PHONY : cryptopp/sha.s
-
-# target to generate assembly for a file
-cryptopp/sha.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/sha.cpp.s
-.PHONY : cryptopp/sha.cpp.s
-
-cryptopp/simple.o: cryptopp/simple.cpp.o
-
-.PHONY : cryptopp/simple.o
-
-# target to build an object file
-cryptopp/simple.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/simple.cpp.o
-.PHONY : cryptopp/simple.cpp.o
-
-cryptopp/simple.i: cryptopp/simple.cpp.i
-
-.PHONY : cryptopp/simple.i
-
-# target to preprocess a source file
-cryptopp/simple.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/simple.cpp.i
-.PHONY : cryptopp/simple.cpp.i
-
-cryptopp/simple.s: cryptopp/simple.cpp.s
-
-.PHONY : cryptopp/simple.s
-
-# target to generate assembly for a file
-cryptopp/simple.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/simple.cpp.s
-.PHONY : cryptopp/simple.cpp.s
-
-cryptopp/winpipes.o: cryptopp/winpipes.cpp.o
-
-.PHONY : cryptopp/winpipes.o
-
-# target to build an object file
-cryptopp/winpipes.cpp.o:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/winpipes.cpp.o
-.PHONY : cryptopp/winpipes.cpp.o
-
-cryptopp/winpipes.i: cryptopp/winpipes.cpp.i
-
-.PHONY : cryptopp/winpipes.i
-
-# target to preprocess a source file
-cryptopp/winpipes.cpp.i:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/winpipes.cpp.i
-.PHONY : cryptopp/winpipes.cpp.i
-
-cryptopp/winpipes.s: cryptopp/winpipes.cpp.s
-
-.PHONY : cryptopp/winpipes.s
-
-# target to generate assembly for a file
-cryptopp/winpipes.cpp.s:
-	$(MAKE) -f CMakeFiles/cryptopp.dir/build.make CMakeFiles/cryptopp.dir/cryptopp/winpipes.cpp.s
-.PHONY : cryptopp/winpipes.cpp.s
 
 lmdb/libraries/liblmdb/mdb.o: lmdb/libraries/liblmdb/mdb.c.o
 
@@ -1624,15 +665,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... package_source"
+	@echo "... xxhash"
 	@echo "... install/local"
 	@echo "... argon2"
-	@echo "... cryptopp"
-	@echo "... xxhash"
 	@echo "... lmdb"
 	@echo "... install"
 	@echo "... blake2"
 	@echo "... package"
+	@echo "... package_source"
 	@echo "... ed25519"
 	@echo "... testminiwget"
 	@echo "... upnpc-static"
@@ -1641,6 +681,8 @@ help:
 	@echo "... testupnpreplyparse"
 	@echo "... minixmlvalid"
 	@echo "... testigddescparse"
+	@echo "... static"
+	@echo "... cryptopp-static"
 	@echo "... secure"
 	@echo "... btcb_lib"
 	@echo "... node"
@@ -1648,114 +690,6 @@ help:
 	@echo "... blake2/blake2b.o"
 	@echo "... blake2/blake2b.i"
 	@echo "... blake2/blake2b.s"
-	@echo "... cryptopp/algparam.o"
-	@echo "... cryptopp/algparam.i"
-	@echo "... cryptopp/algparam.s"
-	@echo "... cryptopp/asn.o"
-	@echo "... cryptopp/asn.i"
-	@echo "... cryptopp/asn.s"
-	@echo "... cryptopp/basecode.o"
-	@echo "... cryptopp/basecode.i"
-	@echo "... cryptopp/basecode.s"
-	@echo "... cryptopp/cpu.o"
-	@echo "... cryptopp/cpu.i"
-	@echo "... cryptopp/cpu.s"
-	@echo "... cryptopp/cryptlib.o"
-	@echo "... cryptopp/cryptlib.i"
-	@echo "... cryptopp/cryptlib.s"
-	@echo "... cryptopp/default.o"
-	@echo "... cryptopp/default.i"
-	@echo "... cryptopp/default.s"
-	@echo "... cryptopp/des.o"
-	@echo "... cryptopp/des.i"
-	@echo "... cryptopp/des.s"
-	@echo "... cryptopp/dessp.o"
-	@echo "... cryptopp/dessp.i"
-	@echo "... cryptopp/dessp.s"
-	@echo "... cryptopp/dll.o"
-	@echo "... cryptopp/dll.i"
-	@echo "... cryptopp/dll.s"
-	@echo "... cryptopp/ec2n.o"
-	@echo "... cryptopp/ec2n.i"
-	@echo "... cryptopp/ec2n.s"
-	@echo "... cryptopp/ecp.o"
-	@echo "... cryptopp/ecp.i"
-	@echo "... cryptopp/ecp.s"
-	@echo "... cryptopp/filters.o"
-	@echo "... cryptopp/filters.i"
-	@echo "... cryptopp/filters.s"
-	@echo "... cryptopp/fips140.o"
-	@echo "... cryptopp/fips140.i"
-	@echo "... cryptopp/fips140.s"
-	@echo "... cryptopp/gcm.o"
-	@echo "... cryptopp/gcm.i"
-	@echo "... cryptopp/gcm.s"
-	@echo "... cryptopp/gf2n.o"
-	@echo "... cryptopp/gf2n.i"
-	@echo "... cryptopp/gf2n.s"
-	@echo "... cryptopp/gfpcrypt.o"
-	@echo "... cryptopp/gfpcrypt.i"
-	@echo "... cryptopp/gfpcrypt.s"
-	@echo "... cryptopp/hex.o"
-	@echo "... cryptopp/hex.i"
-	@echo "... cryptopp/hex.s"
-	@echo "... cryptopp/hmac.o"
-	@echo "... cryptopp/hmac.i"
-	@echo "... cryptopp/hmac.s"
-	@echo "... cryptopp/hrtimer.o"
-	@echo "... cryptopp/hrtimer.i"
-	@echo "... cryptopp/hrtimer.s"
-	@echo "... cryptopp/integer.o"
-	@echo "... cryptopp/integer.i"
-	@echo "... cryptopp/integer.s"
-	@echo "... cryptopp/iterhash.o"
-	@echo "... cryptopp/iterhash.i"
-	@echo "... cryptopp/iterhash.s"
-	@echo "... cryptopp/misc.o"
-	@echo "... cryptopp/misc.i"
-	@echo "... cryptopp/misc.s"
-	@echo "... cryptopp/modes.o"
-	@echo "... cryptopp/modes.i"
-	@echo "... cryptopp/modes.s"
-	@echo "... cryptopp/mqueue.o"
-	@echo "... cryptopp/mqueue.i"
-	@echo "... cryptopp/mqueue.s"
-	@echo "... cryptopp/nbtheory.o"
-	@echo "... cryptopp/nbtheory.i"
-	@echo "... cryptopp/nbtheory.s"
-	@echo "... cryptopp/oaep.o"
-	@echo "... cryptopp/oaep.i"
-	@echo "... cryptopp/oaep.s"
-	@echo "... cryptopp/osrng.o"
-	@echo "... cryptopp/osrng.i"
-	@echo "... cryptopp/osrng.s"
-	@echo "... cryptopp/pubkey.o"
-	@echo "... cryptopp/pubkey.i"
-	@echo "... cryptopp/pubkey.s"
-	@echo "... cryptopp/queue.o"
-	@echo "... cryptopp/queue.i"
-	@echo "... cryptopp/queue.s"
-	@echo "... cryptopp/randpool.o"
-	@echo "... cryptopp/randpool.i"
-	@echo "... cryptopp/randpool.s"
-	@echo "... cryptopp/rdtables.o"
-	@echo "... cryptopp/rdtables.i"
-	@echo "... cryptopp/rdtables.s"
-	@echo "... cryptopp/rijndael.o"
-	@echo "... cryptopp/rijndael.i"
-	@echo "... cryptopp/rijndael.s"
-	@echo "... cryptopp/rng.o"
-	@echo "... cryptopp/rng.i"
-	@echo "... cryptopp/rng.s"
-	@echo "... cryptopp/sha.o"
-	@echo "... cryptopp/sha.i"
-	@echo "... cryptopp/sha.s"
-	@echo "... cryptopp/simple.o"
-	@echo "... cryptopp/simple.i"
-	@echo "... cryptopp/simple.s"
-	@echo "... cryptopp/winpipes.o"
-	@echo "... cryptopp/winpipes.i"
-	@echo "... cryptopp/winpipes.s"
 	@echo "... lmdb/libraries/liblmdb/mdb.o"
 	@echo "... lmdb/libraries/liblmdb/mdb.i"
 	@echo "... lmdb/libraries/liblmdb/mdb.s"

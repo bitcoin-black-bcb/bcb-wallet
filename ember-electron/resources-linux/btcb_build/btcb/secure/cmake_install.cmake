@@ -1,4 +1,4 @@
-# Install script for directory: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb/btcb/secure
+# Install script for directory: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb/btcb/secure
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

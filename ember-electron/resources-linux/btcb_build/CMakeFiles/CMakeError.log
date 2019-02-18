@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/CMakeTmp
+Change Dir: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e4ce4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e4ce4.dir/build.make CMakeFiles/cmTC_e4ce4.dir/build
-make[1]: Entering directory '/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e4ce4.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_e4ce4.dir/CheckSymbolExists.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_e4ce4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4ce4.dir/link.txt --verbose=1
-/usr/bin/cc     -static-libgcc -static-libstdc++  CMakeFiles/cmTC_e4ce4.dir/CheckSymbolExists.c.o  -o cmTC_e4ce4 
-CMakeFiles/cmTC_e4ce4.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_9655f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9655f.dir/build.make CMakeFiles/cmTC_9655f.dir/build
+make[1]: Entering directory '/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9655f.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_9655f.dir/CheckSymbolExists.c.o   -c /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9655f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9655f.dir/link.txt --verbose=1
+/usr/bin/cc     -static-libgcc -static-libstdc++  CMakeFiles/cmTC_9655f.dir/CheckSymbolExists.c.o  -o cmTC_9655f 
+CMakeFiles/cmTC_9655f.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_e4ce4.dir/build.make:97: recipe for target 'cmTC_e4ce4' failed
-make[1]: *** [cmTC_e4ce4] Error 1
-make[1]: Leaving directory '/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_e4ce4/fast' failed
-make: *** [cmTC_e4ce4/fast] Error 2
+CMakeFiles/cmTC_9655f.dir/build.make:97: recipe for target 'cmTC_9655f' failed
+make[1]: *** [cmTC_9655f] Error 1
+make[1]: Leaving directory '/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9655f/fast' failed
+make: *** [cmTC_9655f/fast] Error 2
 
-File /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/CMakeTmp
+Change Dir: /media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_281be/fast"
-/usr/bin/make -f CMakeFiles/cmTC_281be.dir/build.make CMakeFiles/cmTC_281be.dir/build
-make[1]: Entering directory '/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_281be.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_281be.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_281be
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_281be.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create   -static-libgcc -static-libstdc++  CMakeFiles/cmTC_281be.dir/CheckFunctionExists.c.o  -o cmTC_281be -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_f1482/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1482.dir/build.make CMakeFiles/cmTC_f1482.dir/build
+make[1]: Entering directory '/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1482.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_f1482.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f1482
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1482.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create   -static-libgcc -static-libstdc++  CMakeFiles/cmTC_f1482.dir/CheckFunctionExists.c.o  -o cmTC_f1482 -lpthreads 
 /usr/bin/x86_64-linux-gnu-ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_281be.dir/build.make:97: recipe for target 'cmTC_281be' failed
-make[1]: *** [cmTC_281be] Error 1
-make[1]: Leaving directory '/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3251/home/eherrawy/LocalD/src/blockchain-git-repos/btcb_build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_281be/fast' failed
-make: *** [cmTC_281be/fast] Error 2
+CMakeFiles/cmTC_f1482.dir/build.make:97: recipe for target 'cmTC_f1482' failed
+make[1]: *** [cmTC_f1482] Error 1
+make[1]: Leaving directory '/media/eman-herawy/06a83b1f-0bf4-4872-8ba9-a878bd1ab3252/home/eherrawy/LocalD/work/bcb-network/btcb_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f1482/fast' failed
+make: *** [cmTC_f1482/fast] Error 2
 
 
