@@ -87,7 +87,7 @@ module.exports = environment => {
     },
 
     rpc: {
-      host: 'http://localhost:17076',
+      host: 'http://localhost:15000',
       namespace: null
     }
   };
@@ -98,7 +98,7 @@ module.exports = environment => {
     ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.contentSecurityPolicy['connect-src'].push('http://localhost:17076');
+    ENV.contentSecurityPolicy['connect-src'].push('http://localhost:15000');
   }
 
   if (environment === 'test') {
@@ -132,9 +132,9 @@ module.exports = environment => {
     ENV.contentSecurityPolicy['script-src'].push(
       "'sha256-k8ysrhm1lqKyZpON3/YocPOUXAF4sGsu7JIycGDxCWw='"
     );
-    ENV.contentSecurityPolicy['connect-src'].push('http://localhost:17076');
+    ENV.contentSecurityPolicy['connect-src'].push('http://localhost:15000');
 
-    ENV.rpc.host = 'http://localhost:17076';
+    ENV.rpc.host = 'http://localhost:15000';
     ENV.rpc.namespace = 'rpc';
   }
 
