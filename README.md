@@ -50,12 +50,7 @@ Make use of the many generators for code, try `npx ember help generate` for more
 - `yarn build` (development)
 - `yarn build --environment production` (production)
 
-### Using Docker Compose
 
-You can optionally develop and test using [Docker Compose](https://docs.docker.com/compose/).
-
-- `docker-compose build`
-- `docker-compose run --rm --service-ports app`
 
 ### Deploying
 
