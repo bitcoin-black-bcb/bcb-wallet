@@ -1,33 +1,36 @@
 {
-  "name": "@nano-wallet-company/nano-wallet-desktop",
+  "name": "bcb-wallet",
   "version": "1.6.2",
-  "productName": "Nano Wallet Desktop",
+  "productName": "betanet_bcb_wallet",
   "genericName": "Wallet",
-  "description": "An ambitious Nano wallet for desktop and web.",
-  "license": "BSD-2-Clause",
-  "author": {
-    "name": "Nano Wallet Company LLC",
-    "email": "team@nanowalletcompany.com"
-  },
-  "homepage": "https://nanowalletcompany.com",
-  "copyright": "Copyright © 2018 Nano Wallet Company LLC",
+  "description": "An ambitious BCB wallet for desktop and web.",
+  "license": "MIT",
+    "author": {
+      "name": "Eman Herawy",
+      "email": "Eman.herawy@gmail.com"
+    },
+  "copyright": "Copyright © 2019 BCB ",
   "bugs": {
-    "url": "https://github.com/nano-wallet-company/nano-wallet-desktop/issues",
-    "email": "support@nanowalletcompany.com"
+    "url": "https://github.com/bitcoin-black-bcb/bcb-wallet/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nano-wallet-company/nano-wallet-desktop.git"
+    "url": "git+https://github.com/bitcoin-black-bcb/bcb-wallet"
   },
   "build": {
-    "appId": "com.nanowalletcompany.desktop",
-    "mac": {
-      "category": "public.app-category.finance"
-    },
+    "appId": "com.bcb-wallet",
+  "mac": {
+    "category": "public.app-category.finance"
+  },
     "linux": {
+
       "desktop": {
         "Categories": "P2P;Finance;Security"
       }
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
     }
   },
   "scripts": {
@@ -44,8 +47,17 @@
     "clean": "run-p clean:*",
     "clean:tmp": "rimraf tmp",
     "clean:dist": "rimraf dist",
-    "clean:electron-out": "rimraf electron-out"
-  },
+    "pack": "build --dir",
+    "dist": "build",
+    "clean:electron-out": "rimraf electron-out",
+    "build-linux": "electron-packager . bcb-app --platform linux --overwrite --asar --arch x64 --out dist/",
+    "build-win": "electron-packager . bcb-app --overwrite --asar --platform=win32 --arch x64 --out dist/",
+    "deb64": "electron-installer-debian --src dist/bcb-app-linux-x64/ --dest dist/installers/ --arch amd64",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64  --asar  --icon=ember-electron/resources/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . bcb-wallet-app --overwrite --asar --platform=win32 --arch=ia32 --icon=ember-electron/resources/icon.ico --prune=true --out=release-builds --version-string.CompanyName=BCB --version-string.FileDescription=CE --version-string.ProductName=\"BCB Wallet App\"",
+    "package-linux": "electron-packager . bcb-wallet-app --overwrite --asar --platform=linux --arch=x64 --icon=ember-electron/resources/icon.png --prune=true --out=release-builds"
+},
+
   "nodemonConfig": {
     "events": {
       "start": "yarn notify -t 'ember-electron' -m 'Starting Electron app...' -i ember-electron/icons/notification.png &",
@@ -70,12 +82,7 @@
       "path": "@commitlint/prompt"
     }
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
+
   "engines": {
     "node": ">= 10.11.0"
   },
@@ -89,7 +96,7 @@
     "cross-spawn": "^6.0.5",
     "debounce-fn": "^1.0.0",
     "del": "^3.0.0",
-    "electron": "4.0.2",
+
     "electron-compile": "^6.4.4",
     "electron-context-menu": "^0.11.0",
     "electron-debug": "^2.0.0",
@@ -137,6 +144,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "electron": "4.0.2",
     "@babel/plugin-proposal-function-bind": "^7.2.0",
     "@commitlint/cli": "^7.4.0",
     "@commitlint/config-conventional": "^7.3.1",
@@ -163,7 +171,9 @@
     "cross-env": "^5.2.0",
     "devtron": "^1.4.0",
     "downloadjs": "^1.4.7",
+    "electron-builder": "^20.38.5",
     "electron-forge": "^5.2.4",
+    "electron-installer-debian": "^1.1.0",
     "electron-installer-dmg": "^2.0.0",
     "electron-packager": "~12.2.0",
     "electron-prebuilt-compile": "4.0.0",
