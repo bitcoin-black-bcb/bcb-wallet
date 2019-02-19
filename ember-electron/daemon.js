@@ -29,7 +29,7 @@ const jsonwebtoken = Promise.promisifyAll(require('jsonwebtoken'));
 const fs = Promise.promisifyAll(require('graceful-fs'), {
   filter(name) {
     return ['readFile'].includes(name);
-  }
+  },
 });
 
 const electron = require('electron');
@@ -38,7 +38,7 @@ const { is } = require('electron-util');
 
 const { app } = electron;
 
-const generateCert = commonName => {
+const generateCert = (commonName) => {
   const attrs = [
     { name: 'commonName', value: commonName },
     { name: 'countryName', value: 'US' },
@@ -46,37 +46,36 @@ const generateCert = commonName => {
     { name: 'localityName', value: 'Austin' },
     { name: 'organizationName', value: 'Nano Wallet Company LLC' },
     { name: 'organizationalUnitName', value: 'Desktop' },
-    { name: 'emailAddress', value: 'desktop@nanowalletcompany.com' }
+    { name: 'emailAddress', value: 'desktop@nanowalletcompany.com' },
   ];
 
   log.info('Generating TLS certificate:', commonName);
   return selfsigned.generate(attrs, {
     keySize: 2048,
     algorithm: 'sha256',
-    extensions: []
+    extensions: [],
   });
 };
 
-const getLoopbackAddress = () =>
-  new Promise((resolve, reject) => {
-    const server = net.createServer();
-    server.unref();
-    return server.listen(function Server(err) {
-      if (err) {
-        return reject(err);
-      }
+const getLoopbackAddress = () => new Promise((resolve, reject) => {
+  const server = net.createServer();
+  server.unref();
+  return server.listen(function Server(err) {
+    if (err) {
+      return reject(err);
+    }
 
-      const { address } = this.address();
-      return server.close(() => {
-        const loopback = net.isIPv6(address) ? '::1' : '127.0.0.1';
-        // const loopback = '[::1]';
-        // const loopback = '127.0.0.1';
-        log.info(loopback, 'loopback');
+    const { address } = this.address();
+    return server.close(() => {
+      const loopback = net.isIPv6(address) ? '::1' : '127.0.0.1';
+      // const loopback = '[::1]';
+      // const loopback = '127.0.0.1';
+      log.info(loopback, 'loopback');
 
-        return resolve(loopback);
-      });
+      return resolve(loopback);
     });
   });
+});
 
 const forceKill = (child, timeout = 5000) => {
   if (!child.killed) {
@@ -147,26 +146,26 @@ const startDaemon = async () => {
     const serverKeyPath = path.join(tlsPath, 'server.key.pem');
     const serverPems = generateCert('nanowalletcompany.com');
     const dhparam = await fs.readFileAsync(
-      path.join(__dirname, 'tls', 'dhparam.pem')
+      path.join(__dirname, 'tls', 'dhparam.pem'),
     );
     await writeFileAtomic(serverCertPath, normalizeNewline(serverPems.cert), {
-      mode: 0o600
+      mode: 0o600,
     });
     await writeFileAtomic(serverKeyPath, normalizeNewline(serverPems.private), {
-      mode: 0o600
+      mode: 0o600,
     });
     await writeFileAtomic(dhparamPath, normalizeNewline(dhparam), {
-      mode: 0o600
+      mode: 0o600,
     });
 
     const clientCertPath = path.join(clientsPath, 'rpcuser1.cert.pem');
     const clientKeyPath = path.join(clientsPath, 'rpcuser1.key.pem');
     const clientPems = generateCert('desktop.nanowalletcompany.com');
     await writeFileAtomic(clientCertPath, normalizeNewline(clientPems.cert), {
-      mode: 0o600
+      mode: 0o600,
     });
     await writeFileAtomic(clientKeyPath, normalizeNewline(clientPems.private), {
-      mode: 0o600
+      mode: 0o600,
     });
 
     const subjectHash = '3634213b'; // openssl x509 -noout -subject_hash -in rpcuser1.cert.pem
@@ -201,7 +200,7 @@ const startDaemon = async () => {
   config.node.bootstrap_connections = Math.max(4, config.node.network_threads);
   config.node.bootstrap_connections_max = Math.min(
     64,
-    config.node.bootstrap_connections * 10
+    config.node.bootstrap_connections * 10,
   );
 
   const { version: configVersion } = config;
@@ -212,20 +211,31 @@ const startDaemon = async () => {
       return typeof value === 'object' ? value : String(value);
     },
   });
+  let child;
+  if (process.platform === 'win32') {
+    // eslint-disable-next-line global-require
+    const cmd = path.join(global.resourcesPath, toExecutableName('rai_node'));
+    log.info('Starting node:', cmd);
 
-  const cmd = path.join(
-    global.resourcesPath,
-    'btcb_build',
-    toExecutableName('btcb_node')
-  );
-  log.info('Starting node:', cmd);
+    child = crossSpawn(cmd, ['--daemon', '--data_path', dataPath], {
+      cwd: dataPath,
+      windowsHide: true,
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+  } else {
+    const cmd = path.join(
+      global.resourcesPath,
+      'btcb_build',
+      toExecutableName('btcb_node'),
+    );
+    log.info('Starting node:', cmd);
 
-  const child = crossSpawn(cmd, ['--daemon' /*, '--data_path', dataPath*/], {
-    cwd: dataPath,
-    windowsHide: true,
-    stdio: ['ignore', 'pipe', 'pipe']
-  });
-
+    child = crossSpawn(cmd, ['--daemon'], {
+      cwd: dataPath,
+      windowsHide: true,
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+  }
   const { pid } = child;
   if (!pid) {
     const err = new Error('Node not started');
@@ -244,15 +254,11 @@ const startDaemon = async () => {
   }
 
   log.info(
-    `Node started (PID ${pid}, RPC port ${port}, peering port ${peeringPort})`
+    `Node started (PID ${pid}, RPC port ${port}, peering port ${peeringPort})`,
   );
 
-  child.stdout.on('data', data =>
-    log.info('[node] child.stdout', String(data).trim())
-  );
-  child.stderr.on('data', data =>
-    log.error('[node] child.stderr', String(data).trim())
-  );
+  child.stdout.on('data', data => log.info('[node] child.stdout', String(data).trim()));
+  child.stderr.on('data', data => log.error('[node] child.stderr', String(data).trim()));
 
   const killHandler = () => child.kill();
   const removeExitHandler = signalExit(killHandler);
@@ -270,10 +276,10 @@ const startDaemon = async () => {
 
   const { client_certs_path: clientCertsPath } = config.rpc.secure;
   const cert = await fs.readFileAsync(
-    path.join(clientCertsPath, 'rpcuser1.cert.pem')
+    path.join(clientCertsPath, 'rpcuser1.cert.pem'),
   );
   const key = await fs.readFileAsync(
-    path.join(clientCertsPath, 'rpcuser1.key.pem')
+    path.join(clientCertsPath, 'rpcuser1.key.pem'),
   );
   const dhparam = await fs.readFileAsync(dhparamPath);
   const proxy = httpProxy.createProxyServer({
@@ -282,19 +288,17 @@ const startDaemon = async () => {
       port,
       cert,
       key,
-      protocol: 'https:'
+      protocol: 'https:',
     },
     ssl: {
       dhparam,
-      secureProtocol: 'TLSv1_2_client_method'
+      secureProtocol: 'TLSv1_2_client_method',
     },
     secure: false,
-    changeOrigin: true
+    changeOrigin: true,
   });
 
-  log.info(
-    `proxy started ( ${proxy})`,
-  );
+  log.info(`proxy started ( ${proxy})`);
   proxy.on('error', err => log.error('[proxy]', err));
 
   const pems = generateCert('rpc.nanowalletcompany.com');
@@ -309,13 +313,13 @@ const startDaemon = async () => {
     issuer,
     audience,
     subject,
-    jwtid
+    jwtid,
   };
 
   const jwtMiddleware = expressJwt(
     Object.assign({}, jwtOptions, {
       secret: proxyCert,
-      algorithms: ['RS256']
+      algorithms: ['RS256'],
     }),
   );
 
@@ -330,9 +334,7 @@ const startDaemon = async () => {
     return next();
   });
 
-  connectApp.use((req, res, next) =>
-    proxy.web(req, res, { ignorePath: true }, next)
-  );
+  connectApp.use((req, res, next) => proxy.web(req, res, { ignorePath: true }, next));
 
   connectApp.use((err, req, res, next) => {
     log.error('[proxy]', err);
@@ -382,7 +384,7 @@ const startDaemon = async () => {
   Object.defineProperty(global, 'isNodeStarted', {
     get() {
       return server.listening && !child.killed;
-    }
+    },
   });
 
   log.info(`Waiting for node to be ready on ${host}:${port}...`);
@@ -394,7 +396,7 @@ const startDaemon = async () => {
   global.authorizationToken = await jsonwebtoken.signAsync(
     tokenPayload,
     proxyKey,
-    signOptions
+    signOptions,
   );
 
   const proxyPort = 17076;
@@ -414,5 +416,5 @@ const startDaemon = async () => {
 };
 
 module.exports = {
-  startDaemon
+  startDaemon,
 };

@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
-import toRaw from '@nano-wallet-company/nano-wallet-desktop/utils/to-raw';
+import toRaw from 'bcb-wallet/utils/to-raw';
 
 describe('Unit | Utility | to raw', () => {
   // Replace this with your real tests.
