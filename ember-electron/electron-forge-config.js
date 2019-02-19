@@ -1,5 +1,4 @@
 const path = require('path');
-
 const del = require('del');
 
 const {
@@ -21,7 +20,8 @@ const {
   },
 } = require('../package');
 
-const icon = path.join(__dirname, 'resources', 'icon');
+const icon = path.join(__dirname, 'ember-electron/resources', 'icon');
+
 
 const [, name] = packageName.split('/');
 const categories = linuxDesktopCategories.split(';');
@@ -73,9 +73,9 @@ module.exports = {
       'dmg',
     ],
     linux: [
-      'zip',
+      'zip', /* ,
       'deb',
-      'rpm',
+      'rpm', */
     ],
   },
   electronPackagerConfig: {
@@ -135,7 +135,7 @@ module.exports = {
     exe: `${name}.exe`,
     iconUrl: `${homepage}/icon.ico`,
     setupIcon: `${icon}.ico`,
-    loadingGif: path.join(__dirname, 'resources', 'install-spinner.gif'),
+    // loadingGif: path.join(__dirname, 'resources', 'install-spinner.gif'),
   },
   electronInstallerDMG: {
     icon: `${icon}.icns`,
@@ -165,7 +165,7 @@ module.exports = {
     icon: `${icon}.png`,
   },
   github_repository: {
-    owner: 'nano-wallet-company',
-    name: 'nano-wallet-desktop',
+    owner: 'bcb-wallet',
+    name: 'bcb-wallet',
   },
 };
