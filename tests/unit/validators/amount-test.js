@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import toAmount from '@nano-wallet-company/nano-wallet-desktop/utils/to-amount';
-import validateAmount from '@nano-wallet-company/nano-wallet-desktop/validators/amount';
+import toAmount from 'bcb-wallet/utils/to-amount';
+import validateAmount from 'bcb-wallet/validators/amount';
 
 describe('Unit | Validator | amount', () => {
   const intl = {

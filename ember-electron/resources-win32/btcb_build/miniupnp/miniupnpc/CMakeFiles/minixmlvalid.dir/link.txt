@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -Wall  -O2 -DNDEBUG   -static-libgcc -static-libstdc++ -rdynamic CMakeFiles/minixmlvalid.dir/minixmlvalid.c.o CMakeFiles/minixmlvalid.dir/minixml.c.o  -o ../../minixmlvalid 

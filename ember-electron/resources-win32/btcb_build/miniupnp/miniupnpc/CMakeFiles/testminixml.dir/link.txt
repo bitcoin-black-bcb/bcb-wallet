@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -Wall  -O2 -DNDEBUG   -static-libgcc -static-libstdc++ -rdynamic CMakeFiles/testminixml.dir/testminixml.c.o CMakeFiles/testminixml.dir/minixml.c.o CMakeFiles/testminixml.dir/igd_desc_parse.c.o  -o ../../testminixml 

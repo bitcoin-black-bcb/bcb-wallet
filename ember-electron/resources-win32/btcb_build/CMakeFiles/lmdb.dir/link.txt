@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblmdb.a  CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/mdb.c.o CMakeFiles/lmdb.dir/lmdb/libraries/liblmdb/midl.c.o
-/usr/bin/ranlib liblmdb.a
