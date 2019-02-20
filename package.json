@@ -1,5 +1,5 @@
 {
-  "name": "bcb-wallet",
+  "name": "betanet_bcb_wallet",
   "version": "1.6.2",
   "productName": "betanet_bcb_wallet",
   "genericName": "Wallet",
@@ -30,7 +30,7 @@
     },
     "win": {
       "target": "squirrel",
-      "icon": "build/icon.ico"
+      "icon": "ember-electron/resources/icon.ico"
     }
   },
   "scripts": {
