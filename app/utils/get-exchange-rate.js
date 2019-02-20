@@ -21,7 +21,7 @@ export const InvalidCurrencyError = defineError({
 
 export const RequestExchangeRateError = defineError({
   name: 'RequestExchangeRateError',
-  message: 'Error requesting exchange rate'
+  message: 'Error requesting exchange rate',
 });
 
 export const InvalidExchangeRateError = defineError({
