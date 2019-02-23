@@ -1,7 +1,7 @@
 # Bitcoin Black Wallet
 
 
-An ambitious Bitcoin Black Wallet for desktop and web.
+Bitcoin Black Wallet for desktop and web.
 
 [![Screenshot](public/images/screenshot.png)](public/images/screenshot.png)
 
