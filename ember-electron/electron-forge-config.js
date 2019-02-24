@@ -1,4 +1,5 @@
 const path = require('path');
+
 const del = require('del');
 
 const {
@@ -20,10 +21,7 @@ const {
   },
 } = require('../package');
 
-// const icon = path.join(__dirname, 'ember-electron/resources', 'icon');
-// const icon = path.join(__dirname, 'ember-electron/resources/icon.icon');
-const icon = 'ember-electron/resources/icon.ico'; // path.join(__dirname, 'ember-electron/resources', 'icon');
-
+const icon = path.join(__dirname, 'resources', 'icon');
 
 const [, name] = packageName.split('/');
 const categories = linuxDesktopCategories.split(';');
@@ -66,11 +64,19 @@ const redhatArch = (type) => {
 
 module.exports = {
   make_targets: {
-  win32: ['zip'/*, 'squirrel'*/],
-    darwin: ['zip', 'dmg'],
-    linux: ['zip', /* ,
+    win32: [
+      'zip',
+      'squirrel',
+    ],
+    darwin: [
+      'zip',
+      'dmg',
+    ],
+    linux: [
+      'zip',
       'deb',
-      'rpm', */],
+      'rpm',
+    ],
   },
   electronPackagerConfig: {
     icon,
@@ -85,11 +91,10 @@ module.exports = {
       '/\\.DS_Store$',
       '/ember-electron/resources/ordering.txt$',
     ],
-    // asar: {
-    //   ordering: path.join(__dirname, 'resources', 'ordering.txt'),
-    //   unpackDir:
-    //     '{ember-electron/resources,node_modules/7zip,node_modules/**/binding-*}',
-    // },
+    asar: {
+      ordering: path.join(__dirname, 'resources', 'ordering.txt'),
+      unpackDir: '{ember-electron/resources,node_modules/7zip,node_modules/**/binding-*}',
+    },
     // extendInfo: {
     //   CSResourcesFileMapped: true,
     // },
@@ -129,8 +134,8 @@ module.exports = {
     signWithParams,
     exe: `${name}.exe`,
     iconUrl: `${homepage}/icon.ico`,
-    setupIcon: icon,
-    // loadingGif: path.join(__dirname, 'resources', 'install-spinner.gif'),
+    setupIcon: `${icon}.ico`,
+    loadingGif: path.join(__dirname, 'resources', 'install-spinner.gif'),
   },
   electronInstallerDMG: {
     icon: `${icon}.icns`,
@@ -160,7 +165,7 @@ module.exports = {
     icon: `${icon}.png`,
   },
   github_repository: {
-    owner: 'bcb-wallet',
-    name: 'bcb-wallet',
+    owner: 'nano-wallet-company',
+    name: 'nano-wallet-desktop',
   },
 };

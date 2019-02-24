@@ -12,7 +12,7 @@ export default class WalletsOverviewAccountsRoute extends Route {
   renderTemplate() {
     this.render('wallets.overview.accounts.send', {
       into: 'wallets.overview',
-      outlet: 'sendOutlet',
+      outlet: 'sendOutlet'
     });
   }
 
@@ -23,12 +23,12 @@ export default class WalletsOverviewAccountsRoute extends Route {
       wallet,
       source,
       destination: null,
-      amount: null,
+      amount: null
     });
   }
 
   afterModel() {
-    // this.controllerFor('wallets.overview').set('isExpanded', true);
+    //this.controllerFor('wallets.overview').set('isExpanded', true);
   }
 
   @action
