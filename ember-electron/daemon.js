@@ -214,7 +214,7 @@ const startDaemon = async () => {
   let child;
   if (process.platform === 'win32') {
     // eslint-disable-next-line global-require
-    const cmd = path.join(global.resourcesPath, toExecutableName('rai_node'));
+    const cmd = path.join(global.resourcesPath, toExecutableName('btcb_node'));
     log.info('Starting node:', cmd);
 
     child = crossSpawn(cmd, ['--daemon', '--data_path', dataPath], {
