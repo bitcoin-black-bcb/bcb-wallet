@@ -2,23 +2,33 @@
   "version": "2",
   "rpc_enable": "true",
   "rpc": {
-    "address": "127.0.0.1",
+    "address": "::1",
     "port": "15000",
     "enable_control": "true",
     "frontier_request_limit": "16384",
     "chain_request_limit": "16384",
-    "max_json_depth": "20"
+    "max_json_depth": "20",
+    "secure": {
+      "enable": "false",
+      "verbose_logging": "true",
+      "server_cert_path": "/home/melnaquib/.config/Electron/tls/server.cert.pem",
+      "server_key_path": "/home/melnaquib/.config/Electron/tls/server.key.pem",
+      "server_key_passphrase": "",
+      "server_dh_path": "/home/melnaquib/.config/Electron/tls/dhparam.pem",
+      "client_certs_path": "/home/melnaquib/.config/Electron/tls/clients"
+    }
+
   },
   "node": {
     "version": "16",
     "peering_port": "14000",
     "bootstrap_fraction_numerator": "1",
-    "receive_minimum": "1000000000000000000000000",
+    "receive_minimum": "1000000000000000000",
     "logging": {
       "version": "5",
       "ledger": "false",
       "ledger_duplicate": "false",
-      "vote": "false",
+      "vote": "true",
       "network": "true",
       "network_message": "false",
       "network_publish": "false",
@@ -39,15 +49,20 @@
     },
     "work_peers": "",
     "preconfigured_peers": [
-      "2406:da1a:305:2d01:debd:39b9:d75d:2abd",
-      "2406:da1c:890:da01:da59:3b9e:ebb1:2489",
-      "2600:1f16:aaa:ff02:74dc:ff20:bb59:2daa",
-      "2a05:d01c:e0a:2801:8b79:f9db:ee8f:e673"
+      "2400:6180:100:d0::903:b001",
+      "2400:6180:100:d0::903:c001",
+      "2400:6180:100:d0::8f7:4001",
+      "2400:6180:100:d0::8ff:7001",
+
+      "::ffff:159.65.152.110",
+      "::ffff:206.189.142.96",
+      "::ffff:139.59.66.31",
+      "::ffff:139.59.65.30"
     ],
     "preconfigured_representatives": [
-      "bcb_3iarrwbi5fe7zp6adjgqx4fpopotbzxyo3659gebigxw79iny4qx8qz1i7zq"
+      "bcb_3hhb18bqcandzueboeomyytqf6wgmxrt9twde3xbga79yhkozz88dr3qqhok"
     ],
-    "online_weight_minimum": "60000000000000000000000000000000000000",
+    "online_weight_minimum": "60000000000000000000000000000000000",
     "online_weight_quorum": "5",
     "password_fanout": "1024",
     "io_threads": "4",
@@ -63,7 +78,7 @@
     "block_processor_batch_max_time": "5000",
     "allow_local_peers": "false"
   },
-  "opencl_enable": "false",
+  "opencl_enable": "true",
   "opencl": {
     "platform": "0",
     "device": "0",
