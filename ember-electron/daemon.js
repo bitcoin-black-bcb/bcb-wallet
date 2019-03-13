@@ -136,6 +136,7 @@ const startDaemon = async () => {
 
   const tlsPath = path.join(dataPath, 'tls');
   const dhparamPath = path.join(tlsPath, 'dhparam.pem');
+
   if (!config.rpc.secure) {
     log.info('Generating secure node RPC configuration...');
     log.info(config.rpc.address, 'config.rpc.address');
@@ -174,7 +175,7 @@ const startDaemon = async () => {
 
     // https://github.com/cryptocode/notes/wiki/RPC-TLS
     config.rpc.secure = {
-      enable: true,
+      enable: false,
       verbose_logging: is.development,
       server_cert_path: serverCertPath,
       server_key_path: serverKeyPath,
@@ -187,8 +188,10 @@ const startDaemon = async () => {
   const host = config.rpc.address;
   log.info(host, 'host');
 
-  const port = await getPort({ host, port: [config.rpc.port] });
-  const peeringPort = await getPort({ host, port: [config.node.peering_port] });
+  // const port = await getPort({ host, port: [config.rpc.port] });
+  // const peeringPort = await getPort({ host, port: [config.node.peering_port] });
+  const port = parseInt(config.rpc.port);
+  const peeringPort = parseInt(config.node.peering_port);
   config.rpc.port = port;
   config.node.peering_port = peeringPort;
   config.node.logging.log_rpc = is.development;
@@ -225,7 +228,6 @@ const startDaemon = async () => {
   } else {
     const cmd = path.join(
       global.resourcesPath,
-      'btcb_build',
       toExecutableName('btcb_node'),
     );
     log.info('Starting node:', cmd);

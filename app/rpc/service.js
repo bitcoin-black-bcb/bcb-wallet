@@ -121,7 +121,7 @@ export default class RPCService extends Service {
   }
 
   walletCreate() {
-   console.log('walletCreate');
+    console.log('walletCreate');
     return this.call(actions.WALLET_CREATE);
   }
 
