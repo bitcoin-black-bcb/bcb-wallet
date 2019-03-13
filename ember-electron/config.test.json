@@ -7,7 +7,17 @@
     "enable_control": "true",
     "frontier_request_limit": "16384",
     "chain_request_limit": "16384",
-    "max_json_depth": "20"
+    "max_json_depth": "20",
+    "secure": {
+      "enable": "false",
+      "verbose_logging": "true",
+      "server_cert_path": "/home/melnaquib/.config/Electron/tls/server.cert.pem",
+      "server_key_path": "/home/melnaquib/.config/Electron/tls/server.key.pem",
+      "server_key_passphrase": "",
+      "server_dh_path": "/home/melnaquib/.config/Electron/tls/dhparam.pem",
+      "client_certs_path": "/home/melnaquib/.config/Electron/tls/clients"
+    }
+
   },
   "node": {
     "version": "16",

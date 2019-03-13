@@ -1,2 +1,0 @@
-/usr/bin/ar qc libargon2.a  CMakeFiles/argon2.dir/phc-winner-argon2/src/argon2.c.o CMakeFiles/argon2.dir/phc-winner-argon2/src/core.c.o CMakeFiles/argon2.dir/phc-winner-argon2/src/thread.c.o CMakeFiles/argon2.dir/phc-winner-argon2/src/encoding.c.o CMakeFiles/argon2.dir/phc-winner-argon2/src/opt.c.o
-/usr/bin/ranlib libargon2.a

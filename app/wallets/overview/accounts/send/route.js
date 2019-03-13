@@ -28,7 +28,7 @@ export default class WalletsOverviewAccountsRoute extends Route {
   }
 
   afterModel() {
-    //this.controllerFor('wallets.overview').set('isExpanded', true);
+    // this.controllerFor('wallets.overview').set('isExpanded', true);
   }
 
   @action
