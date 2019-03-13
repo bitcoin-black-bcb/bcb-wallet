@@ -31,7 +31,7 @@ You will need the following things properly installed on your computer.
 ### Simple
 
 - `yarn electron:start`
-- The app will open in standalone electron session with developer tools
+- The app will open in standalone electron session with developer tools.
 
 
 
