@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -Wall  -O2 -DNDEBUG   -static-libgcc -static-libstdc++ -rdynamic CMakeFiles/upnpc-static.dir/upnpc.c.o  -o ../../upnpc-static libminiupnpc.a 

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libed25519.a  CMakeFiles/ed25519.dir/ed25519.c.o
-/usr/bin/ranlib libed25519.a
