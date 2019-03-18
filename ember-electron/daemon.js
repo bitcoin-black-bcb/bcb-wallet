@@ -277,24 +277,17 @@ const startDaemon = async () => {
   child.once('exit', () => app.removeListener('will-quit', killHandler));
 
   const { client_certs_path: clientCertsPath } = config.rpc.secure;
-  const cert = await fs.readFileAsync(
-    path.join(clientCertsPath, 'rpcuser1.cert.pem'),
-  );
-  const key = await fs.readFileAsync(
-    path.join(clientCertsPath, 'rpcuser1.key.pem'),
-  );
-  const dhparam = await fs.readFileAsync(dhparamPath);
+  // const cert = await fs.readFileAsync(
+  //   path.join(clientCertsPath, 'rpcuser1.cert.pem'),
+  // );
+  // const key = await fs.readFileAsync(
+  //   path.join(clientCertsPath, 'rpcuser1.key.pem'),
+  // );
   const proxy = httpProxy.createProxyServer({
     target: {
       host,
       port,
-      cert,
-      key,
       protocol: 'https:',
-    },
-    ssl: {
-      dhparam,
-      secureProtocol: 'TLSv1_2_client_method',
     },
     secure: false,
     changeOrigin: true,
@@ -343,12 +336,7 @@ const startDaemon = async () => {
     return next();
   });
 
-  const serverOptions = {
-    dhparam,
-    cert: proxyCert,
-    key: proxyKey,
-    secureProtocol: 'TLSv1_2_server_method',
-  };
+  const serverOptions = {};
 
   const server = spdy.createServer(serverOptions, connectApp);
   serverDestroy(server);
