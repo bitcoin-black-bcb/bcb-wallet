@@ -31,7 +31,8 @@
     }
   },
   "scripts": {
-    "build": "ember build",
+    "build:dev": "ember build",
+    "build:prod": "ember build --environment=production",
     "start": "ember serve",
     "test": "ember test",
     "lint:js": "eslint .",
