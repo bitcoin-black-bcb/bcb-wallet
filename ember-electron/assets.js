@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const got = require('got');
 const prettyMs = require('pretty-ms');
 
-const lzma = require('lzma-native');
+// const lzma = require('lzma-native');
 const tar = require('tar-fs');
 const tarStream = require('tar-stream');
 const progressStream = require('progress-stream');
@@ -81,7 +81,7 @@ const extractAsset = async (savePath, extractDir, onProgress) => {
     // eslint-disable-next-line security/detect-non-literal-fs-filename
     fs.createReadStream(savePath),
     createProgressStream(size, onProgress),
-    lzma.createDecompressor(),
+    // lzma.createDecompressor(),
     tar.extract(extractDir, {
       fs,
       extract,
