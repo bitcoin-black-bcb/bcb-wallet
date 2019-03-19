@@ -240,7 +240,7 @@ const startDaemon = async () => {
   if (!pid) {
     const err = new Error('Node not started');
     err.code = 'ENOENT';
-    err.path = cmd;
+    // err.path = cmd;
     throw err;
   }
 

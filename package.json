@@ -1,10 +1,11 @@
 {
   "name": "@bcb-wallet-company/bcb-wallet",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "productName": "Bcb Wallet ",
   "genericName": "Wallet",
   "description": "An ambitious bcb wallet for desktop and web.",
   "license": "MIT",
+  "main": "ember-electron/main.js",
   "author": {
     "name": "Eman Herawy",
     "email": "eman.herawy@gmail.com"
@@ -30,7 +31,6 @@
     }
   },
   "scripts": {
-    "postinstall": "patch-package",
     "build": "ember build",
     "start": "ember serve",
     "test": "ember test",
