@@ -232,7 +232,7 @@ const startDaemon = async () => {
     );
     log.info('Starting node:', cmd);
 
-    child = crossSpawn(cmd, ['--daemon'], {
+    child = crossSpawn(cmd, ['--daemon', '--data_path', dataPath], {
       cwd: dataPath,
       windowsHide: true,
       stdio: ['ignore', 'pipe', 'pipe'],
