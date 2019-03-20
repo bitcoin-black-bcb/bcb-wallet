@@ -42,7 +42,7 @@
       "work_generation_time": "true",
       "upnp_details": "false",
       "timing": "false",
-      "log_to_cerr": "true",
+      "log_to_cerr": "false",
       "max_size": "16777216",
       "rotation_size": "4194304",
       "flush": "true"
