@@ -19,7 +19,7 @@ export default class WalletsOverviewSettingsRoute extends Route {
 
   model() {
     const wallet = this.modelFor('wallets/overview');
-    const seed = this.get('rpc').walletSeed(get(wallet, 'id'));
+    const seed = get(wallet, 'id'); //this.get('rpc').walletSeed(get(wallet, 'id'));
     return hash({
       wallet,
       seed,
