@@ -1,5 +1,5 @@
 import AjaxService from 'ember-ajax/services/ajax';
-import { get } from '@ember/object';
+// import { get } from '@ember/object';
 
 import { task } from 'ember-concurrency';
 import {

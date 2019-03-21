@@ -3,10 +3,10 @@ const {
   version,
   description,
   name: modulePrefix,
-  productName: title
+  productName: title,
 } = require('../package');
 
-module.exports = environment => {
+module.exports = (environment) => {
   const isElectron = !!process.env.EMBER_CLI_ELECTRON;
   const ENV = {
     title,
@@ -21,9 +21,9 @@ module.exports = environment => {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-        'ember-improved-instrumentation': true
+        'ember-improved-instrumentation': true,
       },
-      EXTEND_PROTOTYPES: false
+      EXTEND_PROTOTYPES: false,
     },
 
     APP: {
@@ -39,7 +39,7 @@ module.exports = environment => {
       'img-src': ["'self'", 'data:'],
       'style-src': ["'self'", "'unsafe-inline'"],
       'media-src': ["'self'"],
-      'manifest-src': ["'self'"]
+      'manifest-src': ["'self'"],
     },
 
     contentSecurityPolicyMeta: true,
@@ -64,32 +64,32 @@ module.exports = environment => {
           'sync',
           'thumbs-up',
           'times',
-          'upload'
+          'upload',
         ],
-        'free-regular-svg-icons': ['question-circle']
-      }
+        'free-regular-svg-icons': ['question-circle'],
+      },
     },
 
     viewportConfig: {
-      viewportSpy: true
+      viewportSpy: true,
     },
 
     links: {
       eula: 'https://nanowalletcompany.com/desktop-eula',
-      privacyPolicy: 'https://nanowalletcompany.com/desktop-privacy-policy'
+      privacyPolicy: 'https://nanowalletcompany.com/desktop-privacy-policy',
     },
 
     assets: {
       data: {
         url: 'https://snapshots.nano.org/data.tar.xz',
-        signature: 'https://snapshots.nano.org/data.tar.xz.sha256'
-      }
+        signature: 'https://snapshots.nano.org/data.tar.xz.sha256',
+      },
     },
 
     rpc: {
       host: 'http://localhost:15000',
-      namespace: null
-    }
+      namespace: null,
+    },
   };
 
   if (environment === 'development') {
@@ -114,7 +114,7 @@ module.exports = environment => {
     ENV.APP.autoboot = false;
 
     ENV.contentSecurityPolicy['script-src'].push(
-      "'sha256-37u63EBe1EibDZ3vZNr6mxLepqlY1CQw+4N89HrzP9s='"
+      "'sha256-37u63EBe1EibDZ3vZNr6mxLepqlY1CQw+4N89HrzP9s='",
     );
 
     ENV.rpc.host = '';
@@ -127,10 +127,10 @@ module.exports = environment => {
 
   if (isElectron) {
     ENV.contentSecurityPolicy['script-src'].push(
-      "'sha256-bOpoN0CEbM1axa1+hv51a4JK31vrAOV7Cbze5rS9GJI='"
+      "'sha256-bOpoN0CEbM1axa1+hv51a4JK31vrAOV7Cbze5rS9GJI='",
     );
     ENV.contentSecurityPolicy['script-src'].push(
-      "'sha256-k8ysrhm1lqKyZpON3/YocPOUXAF4sGsu7JIycGDxCWw='"
+      "'sha256-k8ysrhm1lqKyZpON3/YocPOUXAF4sGsu7JIycGDxCWw='",
     );
     ENV.contentSecurityPolicy['connect-src'].push('http://localhost:15000');
 

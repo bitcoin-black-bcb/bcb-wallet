@@ -1,9 +1,8 @@
 /* eslint-env node */
-const environment =
-  process.env.ELECTRON_ENV ||
-  process.env.EMBER_ENV ||
-  process.env.NODE_ENV ||
-  'production';
+const environment = process.env.ELECTRON_ENV
+  || process.env.EMBER_ENV
+  || process.env.NODE_ENV
+  || 'production';
 process.env.NODE_ENV = environment;
 process.env.EMBER_ENV = environment;
 process.env.ELECTRON_ENV = environment;
@@ -43,7 +42,7 @@ log.transports.rendererConsole.level = 'info';
 unhandled({
   logger(...args) {
     return log.error(...args);
-  }
+  },
 });
 
 // https://github.com/electron-archive/grunt-electron-installer#handling-squirrel-events
@@ -71,17 +70,19 @@ const contextMenu = require('electron-context-menu');
 const protocolServe = require('electron-protocol-serve');
 const {
   default: installExtension,
-  EMBER_INSPECTOR
+  EMBER_INSPECTOR,
 } = require('electron-devtools-installer');
 
-const updateElectronApp = require('update-electron-app');
+// const updateElectronApp = require('update-electron-app');
 
 const { createWindow } = require('./window');
 const { downloadStart, nodeStart } = require('./ipc');
 
 const { version, productName } = require('../package');
 
-const { app, ipcMain, protocol, autoUpdater } = electron;
+const {
+  app, ipcMain, protocol,
+} = electron;
 
 let mainWindow = null;
 
@@ -223,13 +224,13 @@ const run = async () => {
   Object.defineProperty(global, 'locale', {
     get() {
       return app.getLocale() || locale2 || null;
-    }
+    },
   });
 
   Object.defineProperty(global, 'locale', {
     get() {
       return app.getLocale() || locale2 || null;
-    }
+    },
   });
 
   // const databasePath = path.join(dataPath, 'data.ldb');
@@ -240,7 +241,7 @@ const run = async () => {
       log.info(pathExists, 'pathExists');
 
       return pathExists.sync(databasePath);
-    }
+    },
   });
 
   if (is.development) {

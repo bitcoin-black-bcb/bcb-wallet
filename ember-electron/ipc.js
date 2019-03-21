@@ -22,15 +22,13 @@ const downloadStart = ({ sender }, url) => {
         sender.send('download-progress', progress);
       }
     },
-    { wait: 250, immediate: true }
+    { wait: 250, immediate: true },
   );
 
-  const onStarted = item => {
+  const onStarted = (item) => {
     const cancelDownload = () => item.cancel();
     ipcMain.once('window-unloading', cancelDownload);
-    item.once('done', () =>
-      ipcMain.removeListener('window-unloading', cancelDownload)
-    );
+    item.once('done', () => ipcMain.removeListener('window-unloading', cancelDownload));
   };
 
   return downloadAsset(sender, url, onStarted, onProgress)
@@ -43,7 +41,7 @@ const downloadStart = ({ sender }, url) => {
         sender.send('download-done');
       }
     })
-    .catch(err => {
+    .catch((err) => {
       log.error('Error downloading asset:', err);
       if (!window.isDestroyed()) {
         window.setProgressBar(-1);
@@ -57,8 +55,8 @@ const downloadStart = ({ sender }, url) => {
 
 const nodeStart = ({ sender }) => {
   startDaemon()
-    .then(server => {
-        server.once('close', () => {
+    .then((server) => {
+      server.once('close', () => {
         if (!sender.isDestroyed()) {
           sender.send('node-exit');
         }
@@ -68,7 +66,7 @@ const nodeStart = ({ sender }) => {
         sender.send('node-ready');
       }
     })
-    .catch(err => {
+    .catch((err) => {
       log.error('Error starting node:', err);
       if (!sender.isDestroyed()) {
         sender.send('node-error');
@@ -78,5 +76,5 @@ const nodeStart = ({ sender }) => {
 
 module.exports = {
   downloadStart,
-  nodeStart
+  nodeStart,
 };

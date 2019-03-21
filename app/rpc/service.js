@@ -95,10 +95,10 @@ export default class RPCService extends Service {
 
   async call(action, params = {}) {
     const data = assign({ action }, params);
-    console.log(data, 'data');
+    // console.log(data, 'data');
 
     const resp = await this.get('ajax').post('/', { data });
-    console.log(resp, 'resp');
+    // console.log(resp, 'resp');
 
     if (typeof resp.error === 'string') {
       switch (resp.error) {
@@ -121,7 +121,7 @@ export default class RPCService extends Service {
   }
 
   walletCreate() {
-   console.log('walletCreate');
+    // console.log('walletCreate');
     return this.call(actions.WALLET_CREATE);
   }
 
