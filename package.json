@@ -7,11 +7,11 @@
   "license": "MIT",
   "main": "ember-electron/main.js",
   "author": {
-    "name": "Eman Herawy",
-    "email": "eman.herawy@gmail.com"
+    "name": "Bitcoin Black",
+    "email": "hello@bitcoin.black"
   },
-  "homepage": "https://nanowalletcompany.com",
-  "copyright": "Copyright © 2019 cbc Wallet ",
+  "homepage": "https://bitcoin.black",
+  "copyright": "Copyright © 2019 BCB Wallet ",
   "bugs": {
     "url": "https://github.com/bitcoin-black-bcb/bcb-wallet/issues"
   },
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/bitcoin-black-bcb/bcb-wallet"
   },
   "build": {
-    "appId": "com.nanowalletcompany.desktop",
+    "appId": "com.bcbwalletcompany.desktop",
     "mac": {
       "category": "public.app-category.finance"
     },

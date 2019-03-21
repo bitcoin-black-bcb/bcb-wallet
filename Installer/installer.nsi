@@ -1,7 +1,7 @@
 
-!define APPNAME "BCB Wallet App"
+!define APPNAME "BCB Betanet Wallet"
 !define COMPANYNAME "Bitcoin Black"
-!define DESCRIPTION "BCB Wallet by Bitcoin Black"
+!define DESCRIPTION "BCB Betanet Wallet by Bitcoin Black"
 # These three must be integers
 !define VERSIONMAJOR 1
 !define VERSIONMINOR 1
@@ -23,7 +23,7 @@ LicenseData "license.rtf"
 # This will be in the installer/uninstaller's title bar
 Name "${APPNAME}"
 Icon "logo.ico"
-outFile "BCB Wallet Installer.exe"
+outFile "BCB Betanet Wallet Installer.exe"
  
 !include LogicLib.nsh
  
