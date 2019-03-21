@@ -91,8 +91,8 @@ export default class ElectronService extends Service.extend(
   }
 
   get locale() {
-    const defaultLocale = this.get('intl.locale');
-    return 'en-us'; //this.getRemoteGlobal('locale', defaultLocale);
+    // const defaultLocale = this.get('intl.locale');
+    return 'en-us'; // this.getRemoteGlobal('locale', defaultLocale);
   }
 
   get isDataDownloaded() {
