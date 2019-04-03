@@ -1,17 +1,17 @@
 {
   "name": "@bcb-wallet-company/bcb-wallet",
   "version": "1.7.1",
-  "productName": "Bcb Wallet ",
-  "genericName": "Wallet",
+  "productName": "Bitcoin Black Wallet",
+  "genericName": "Bitcoin Black Wallet",
   "description": "An ambitious bcb wallet for desktop and web.",
   "license": "MIT",
   "main": "ember-electron/main.js",
   "author": {
-    "name": "Bitcoin Black",
+    "name": "Bitcoin Black Wallet",
     "email": "hello@bitcoin.black"
   },
   "homepage": "https://bitcoin.black",
-  "copyright": "Copyright © 2019 BCB Wallet ",
+  "copyright": "Copyright © 2019 Bitcoin Black Wallet",
   "bugs": {
     "url": "https://github.com/bitcoin-black-bcb/bcb-wallet/issues"
   },

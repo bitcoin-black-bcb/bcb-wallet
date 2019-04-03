@@ -7,7 +7,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const cpFile = require('cp-file');
 const connect = require('connect');
-const getPort = require('get-port');
+// const getPort = require('get-port');
 const makeDir = require('make-dir');
 const username = require('username');
 const waitPort = require('wait-port');
@@ -242,7 +242,7 @@ const startDaemon = async () => {
   if (!pid) {
     const err = new Error('Node not started');
     err.code = 'ENOENT';
-    err.path = cmd;
+    // err.path = cmd;
     throw err;
   }
 
@@ -276,7 +276,7 @@ const startDaemon = async () => {
   app.once('will-quit', killHandler);
   child.once('exit', () => app.removeListener('will-quit', killHandler));
 
-  const { client_certs_path: clientCertsPath } = config.rpc.secure;
+  // const { client_certs_path: clientCertsPath } = config.rpc.secure;
   // const cert = await fs.readFileAsync(
   //   path.join(clientCertsPath, 'rpcuser1.cert.pem'),
   // );
